@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Carrito | Villa Verde</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<body class="carrito-page">
+
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <button class="hamburguesa" id="btnMenu">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+
+      <a href="index.html" class="logo">
+    <img
+        src="img/Logo-Villaverde-19.png"
+        alt="Villa Verde"
+        class="logo-imagen"
+    >
+</a>
+
+        <a href="carrito.html" class="carrito-icono">
+
+            🛒
+
+            <span id="contadorCarrito">
+                0
+            </span>
+
+        </a>
+
+    </header>
+
+
+
+    <!-- MENÚ -->
+
+    <aside class="menu-lateral" id="menuLateral">
+
+        <button
+            class="cerrar-menu"
+            id="cerrarMenu"
+        >
+            ×
+        </button>
+
+
+        <div class="menu-contenido">
+
+            <p class="menu-subtitulo">
+                EXPLORA
+            </p>
+
+  <nav>
+
+        <a href="catalogo.html?categoria=aceites-vinagres">
+            Aceites y vinagres
+        </a>
+
+        <!-- BEBIDAS -->
+        <div class="menu-item-desplegable">
+
+            <button type="button" class="submenu-boton">
+                <span>Bebidas</span>
+                <span class="submenu-flecha">⌄</span>
+            </button>
+
+            <div class="submenu-bebidas">
+
+                <a href="catalogo.html?categoria=bebidas&subcategoria=healthy">
+                    Healthy
+                </a>
+
+                <a href="catalogo.html?categoria=bebidas&subcategoria=refrescantes">
+                    Refrescantes
+                </a>
+
+                <a href="catalogo.html?categoria=bebidas&subcategoria=cerveza">
+                    Cerveza
+                </a>
+<a href="catalogo.html?categoria=bebidas&subcategoria=vino">
+                    Vino
+                </a>
+            </div>
+
+        </div>
+<!-- CHARCUTERÍA -->
+        <div class="menu-item-desplegable">
+
+            <button type="button" class="submenu-boton">
+                <span>Charcutería</span>
+                <span class="submenu-flecha">⌄</span>
+            </button>
+
+            <div class="submenu-bebidas">
+
+                <a href="catalogo.html?categoria=charcuteria&subcategoria=quesos">
+                    Quesos
+                </a>
+
+                <a href="catalogo.html?categoria=charcuteria&subcategoria=carnes-frias">
+                    Carnes frías
+                </a>
+
+            </div>
+
+        </div>
+  <a href="catalogo.html?categoria=cuidado-personal">
+            Cuidado personal
+        </a>
+
+        <!-- GOURMET -->
+        <div class="menu-item-desplegable">
+
+            <button type="button" class="submenu-boton">
+                <span>Gourmet</span>
+                <span class="submenu-flecha">⌄</span>
+            </button>
+
+            <div class="submenu-bebidas">
+
+                <a href="catalogo.html?categoria=gourmet&subcategoria=conservas-encurtidos">
+                    Conservas y encurtidos
+                </a>
+
+                <a href="catalogo.html?categoria=gourmet&subcategoria=miel">
+                    Miel
+                </a>
+
+                <a href="catalogo.html?categoria=gourmet&subcategoria=mermelada">
+                    Mermelada
+                </a>
+
+                <a href="catalogo.html?categoria=gourmet&subcategoria=sazonadores">
+                    Sazonadores
+                </a>
+
+                <a href="catalogo.html?categoria=gourmet&subcategoria=salsas">
+                    Salsas
+                </a>
+
+                <a href="catalogo.html?categoria=gourmet&subcategoria=cacao">
+                    Cacao
+                </a>
+
+                <a href="catalogo.html?categoria=gourmet&subcategoria=untables">
+                    Untables
+                </a>
+
+            
+
+                <a href="catalogo.html?categoria=gourmet&subcategoria=panaderia">
+                    Panadería
+                </a>
+
+       <a href="catalogo.html?categoria=gourmet&subcategoria=te-infusiones">
+    Té e infusiones
+</a>
+
+            </div>
+
+        </div>
+    <a href="catalogo.html?categoria=hogar">
+            Hogar
+        </a>
+<a href="catalogo.html?categoria=nuevos">
+            Nuevos productos
+        </a>
+
+
+        <!-- SNACKS -->
+        <div class="menu-item-desplegable">
+
+            <button type="button" class="submenu-boton">
+                <span>Snacks</span>
+                <span class="submenu-flecha">⌄</span>
+            </button>
+
+            <div class="submenu-bebidas">
+
+                <a href="catalogo.html?categoria=snacks&subcategoria=horneados">
+                    Horneados
+                </a>
+
+                <a href="catalogo.html?categoria=snacks&subcategoria=deshidratados">
+                    Deshidratados
+                </a>
+
+                <a href="catalogo.html?categoria=snacks&subcategoria=salados">
+                    Salados
+                </a>
+
+                <a href="catalogo.html?categoria=snacks&subcategoria=sin-azucar">
+                    Sin azúcar
+                </a>
+
+                <a href="catalogo.html?categoria=snacks&subcategoria=enchilados">
+                    Enchilados
+                </a>
+
+                <a href="catalogo.html?categoria=snacks&subcategoria=dulces">
+                    Dulces
+                </a>
+
+            </div>
+
+        </div>
+
+
+    
+
+        
+    </nav>
+        </div>
+
+    
+
+        
+    </nav>
+        </div>
+
+    </aside>
+
+
+    <div
+        class="overlay-menu"
+        id="overlayMenu">
+    </div>
+
+
+
+    <!-- CARRITO -->
+
+    <main class="carrito-contenedor">
+
+
+        <div class="carrito-encabezado">
+
+            <p>
+                TU PEDIDO
+            </p>
+
+            <h1>
+                Carrito
+            </h1>
+
+        </div>
+
+
+
+        <div class="carrito-layout">
+
+
+            <!-- PRODUCTOS -->
+
+            <section>
+
+                <div
+                    id="listaCarrito"
+                    class="lista-carrito">
+                </div>
+
+            </section>
+
+
+
+            <!-- RESUMEN -->
+
+            <aside class="resumen-carrito">
+
+
+                <h2>
+                    Resumen
+                </h2>
+
+
+                <div class="resumen-linea">
+
+                    <span>
+                        Productos
+                    </span>
+
+                    <span id="cantidadProductos">
+                        0
+                    </span>
+
+                </div>
+
+
+                <div class="resumen-linea total-linea">
+
+                    <span>
+                        Total
+                    </span>
+
+                    <strong id="totalCarrito">
+                        $0.00
+                    </strong>
+
+                </div>
+
+
+
+                <button
+                    class="btn-whatsapp"
+                    onclick="enviarWhatsApp()"
+                >
+
+                    Enviar pedido por WhatsApp
+
+                </button>
+
+
+
+                <a
+                    href="catalogo.html?categoria=bebidas"
+                    class="seguir-comprando"
+                >
+
+                    Seguir comprando
+
+                </a>
+
+
+            </aside>
+
+        </div>
+
+    </main>
+
+<!-- =========================
+     CONTACTO
+========================== -->
+
+<style>
+  .banner-contacto {
+    width: 100%;
+    background: #8f9141;
+    color: #fff;
+    padding: 38px 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+  }
+
+  .banner-contacto * {
+    box-sizing: border-box;
+  }
+
+  .banner-contacto .contacto-interior {
+    max-width: 1130px;
+    margin: 0 auto;
+  }
+
+  .banner-contacto h2 {
+    font-family: "Brush Script MT", "Segoe Script", cursive;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #fff;
+    margin: 0 0 22px;
+  }
+
+  .banner-contacto .redes {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .banner-contacto .redes a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    padding: 18px;
+    border: 1px solid #ffffff73;
+    border-radius: 18px;
+    background: transparent;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+    transition: background .2s;
+  }
+
+  .banner-contacto .redes a:hover {
+    background: #ffffff1f;
+  }
+
+  .banner-contacto .redes a:focus-visible {
+    outline: 3px solid #fff;
+    outline-offset: 4px;
+  }
+
+  .banner-contacto .redes strong {
+    font-weight: 700;
+    color: #fff;
+  }
+
+  .banner-contacto .redes span {
+    color: #fff;
+  }
+
+  @media (max-width: 850px) {
+    .banner-contacto .redes {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 500px) {
+    .banner-contacto .redes {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .banner-contacto .redes a {
+      transition: none;
+    }
+  }
+</style>
+
+<!-- BANNER DE CONTACTO -->
+<footer
+  class="banner-contacto"
+  id="contacto"
+  aria-labelledby="titulo-contacto"
+>
+  <div class="contacto-interior">
+    <h2 id="titulo-contacto">Contacto</h2>
+
+    <nav class="redes" aria-label="Redes sociales y contacto">
+      <a
+        href="https://wa.me/525620208237"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <strong>WhatsApp</strong>
+        <span>56 2020 8237</span>
+      </a>
+
+      <a
+        href="https://www.facebook.com/VillaVerdeBoutiqueGourmet"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <strong>Facebook</strong>
+        <span>Villa Verde Boutique Gourmet</span>
+      </a>
+
+      <a
+        href="https://www.instagram.com/villaverdegourmetmx/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <strong>Instagram</strong>
+        <span>@villaverdegourmetmx</span>
+      </a>
+
+      <a href="mailto:rvvgourmet@gmail.com">
+        <strong>Correo</strong>
+        <span>rvvgourmet@gmail.com</span>
+      </a>
+    </nav>
+  </div>
+</footer>
+
+    <script src="app.js"></script>
+
+
+    <script>
+
+    /* =====================================
+       OBTENER CARRITO
+    ===================================== */
+
+    let carrito =
+        JSON.parse(localStorage.getItem("carrito")) || [];
+
+
+    /* =====================================
+       MOSTRAR CARRITO
+    ===================================== */
+
+    function mostrarCarrito() {
+
+        const lista =
+            document.getElementById("listaCarrito");
+
+        lista.innerHTML = "";
+
+        let total = 0;
+        let cantidadProductos = 0;
+
+
+        /* CARRITO VACÍO */
+
+        if (carrito.length === 0) {
+
+            lista.innerHTML = `
+
+                <div class="carrito-vacio">
+
+                    <h2>
+                        Tu carrito está vacío
+                    </h2>
+
+                    <p>
+                        Descubre nuestros productos Villa Verde.
+                    </p>
+
+                    <a href="catalogo.html?categoria=bebidas">
+                        Ver productos
+                    </a>
+
+                </div>
+
+            `;
+
+        }
+
+
+        /* =====================================
+           PRODUCTOS
+        ===================================== */
+
+        carrito.forEach((item, index) => {
+
+            const precio =
+                Number(item.precio) || 0;
+
+            const cantidad =
+                Number(item.cantidad) || 1;
+
+            const subtotal =
+                precio * cantidad;
+
+            total += subtotal;
+
+            cantidadProductos += cantidad;
+
+
+            lista.innerHTML += `
+
+                <div class="carrito-item">
+
+                    <img
+                        src="${item.imagen || "Villa verde.jpg"}"
+                        alt="${item.nombre}"
+                    >
+
+
+                    <div class="carrito-item-info">
+
+                        <h3>
+                            ${item.nombre}
+                        </h3>
+
+
+                        ${
+                            item.presentacion
+                                ? `<p>Presentación: ${item.presentacion}</p>`
+                                : ""
+                        }
+
+
+                        ${
+                            item.sabor
+                                ? `<p>Sabor: ${item.sabor}</p>`
+                                : ""
+                        }
+
+
+                        <p>
+                            Precio unitario: $${precio.toFixed(2)}
+                        </p>
+
+
+                        <p>
+                            Cantidad: ${cantidad}
+                        </p>
+
+
+                        <strong>
+                            Subtotal: $${subtotal.toFixed(2)}
+                        </strong>
+
+                    </div>
+
+
+                    <button
+                        class="eliminar-producto"
+                        onclick="eliminarProducto(${index})"
+                    >
+                        Eliminar
+                    </button>
+
+                </div>
+
+            `;
+
+        });
+
+
+        document.getElementById("cantidadProductos").innerText =
+            cantidadProductos;
+
+
+        document.getElementById("totalCarrito").innerText =
+            "$" + total.toFixed(2);
+
+
+        actualizarContadorCarrito();
+
+    }
+
+
+
+    /* =====================================
+       ELIMINAR PRODUCTO
+    ===================================== */
+
+    function eliminarProducto(index) {
+
+        carrito.splice(index, 1);
+
+
+        localStorage.setItem(
+            "carrito",
+            JSON.stringify(carrito)
+        );
+
+
+        mostrarCarrito();
+
+    }
+
+
+
+    /* =====================================
+       ENVIAR PEDIDO POR WHATSAPP
+    ===================================== */
+
+    function enviarWhatsApp() {
+
+        if (carrito.length === 0) {
+
+            alert(
+                "Tu carrito está vacío."
+            );
+
+            return;
+
+        }
+
+
+        let mensaje =
+            "Hola, quiero realizar el siguiente pedido:%0A%0A";
+
+
+        let total = 0;
+        let cantidadTotal = 0;
+
+
+        carrito.forEach(item => {
+
+            const precio =
+                Number(item.precio) || 0;
+
+            const cantidad =
+                Number(item.cantidad) || 1;
+
+            const subtotal =
+                precio * cantidad;
+
+
+            total += subtotal;
+
+            cantidadTotal += cantidad;
+
+
+            mensaje +=
+                "• " + item.nombre;
+
+
+            /* PRESENTACIÓN */
+
+            if (item.presentacion) {
+
+                mensaje +=
+                    "%0APresentación: " +
+                    item.presentacion;
+
+            }
+
+
+            /* SABOR */
+
+            if (item.sabor) {
+
+                mensaje +=
+                    "%0ASabor: " +
+                    item.sabor;
+
+            }
+
+
+            /* PRECIO UNITARIO */
+
+            mensaje +=
+                "%0APrecio unitario: $" +
+                precio.toFixed(2);
+
+
+            /* CANTIDAD */
+
+            mensaje +=
+                "%0ACantidad: " +
+                cantidad;
+
+
+            /* SUBTOTAL */
+
+            mensaje +=
+                "%0ASubtotal: $" +
+                subtotal.toFixed(2);
+
+
+            mensaje += "%0A%0A";
+
+        });
+
+
+
+        mensaje +=
+            "Cantidad total de productos: " +
+            cantidadTotal +
+            "%0A";
+
+
+        mensaje +=
+            "TOTAL: $" +
+            total.toFixed(2);
+
+
+
+        /* ===================================
+           NÚMERO DE WHATSAPP
+        =================================== */
+
+        const telefono =
+            "525539595471";
+
+
+        const url =
+            "https://wa.me/" +
+            telefono +
+            "?text=" +
+            mensaje;
+
+
+        window.open(
+            url,
+            "_blank"
+        );
+
+    }
+
+
+
+    /* =====================================
+       MOSTRAR AL CARGAR
+    ===================================== */
+
+    mostrarCarrito();
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Producto | Villa Verde</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<body class="producto-page">
+
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <button class="hamburguesa" id="btnMenu">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+
+       <a href="index.html" class="logo">
+    <img
+        src="img/Logo-Villaverde-19.png"
+        alt="Villa Verde"
+        class="logo-imagen"
+    >
+</a>
+
+        <a href="carrito.html" class="carrito-icono">
+
+            🛒
+
+            <span id="contadorCarrito">
+                0
+            </span>
+
+        </a>
+
+    </header>
+
+
+
+    <!-- MENÚ -->
+
+    <aside class="menu-lateral" id="menuLateral">
+
+        <button class="cerrar-menu" id="cerrarMenu">
+            ×
+        </button>
+
+
+        <div class="menu-contenido">
+
+            <p class="menu-subtitulo">
+                EXPLORA
+            </p>
+
+ <nav>
+
+        <a href="catalogo.html?categoria=aceites-vinagres">
+            Aceites y vinagres
+        </a>
+
+        <!-- BEBIDAS -->
+        <div class="menu-item-desplegable">
+
+            <button type="button" class="submenu-boton">
+                <span>Bebidas</span>
+                <span class="submenu-flecha">⌄</span>
+            </button>
+
+            <div class="submenu-bebidas">
+
+                <a href="catalogo.html?categoria=bebidas&subcategoria=healthy">
+                    Healthy
+                </a>
+
+                <a href="catalogo.html?categoria=bebidas&subcategoria=refrescantes">
+                    Refrescantes
+                </a>
+
+                <a href="catalogo.html?categoria=bebidas&subcategoria=cerveza">
+                    Cerveza
+                </a>
+<a href="catalogo.html?categoria=bebidas&subcategoria=vino">
+                    Vino
+                </a>
+            </div>
+
+        </div>
+<!-- CHARCUTERÍA -->
+        <div class="menu-item-desplegable">
+
+            <button type="button" class="submenu-boton">
+                <span>Charcutería</span>
+                <span class="submenu-flecha">⌄</span>
+            </button>
+
+            <div class="submenu-bebidas">
+
+                <a href="catalogo.html?categoria=charcuteria&subcategoria=quesos">
+                    Quesos
+                </a>
+
+                <a href="catalogo.html?categoria=charcuteria&subcategoria=carnes-frias">
+                    Carnes frías
+                </a>
+
+            </div>
+
+        </div>
+  <a href="catalogo.html?categoria=cuidado-personal">
+            Cuidado personal
+        </a>
+
+        <!-- GOURMET -->
+        <div class="menu-item-desplegable">
+
+            <button type="button" class="submenu-boton">
+                <span>Gourmet</span>
+                <span class="submenu-flecha">⌄</span>
+            </button>
+
+            <div class="submenu-bebidas">
+
+                <a href="catalogo.html?categoria=gourmet&subcategoria=conservas-encurtidos">
+                    Conservas y encurtidos
+                </a>
+
+                <a href="catalogo.html?categoria=gourmet&subcategoria=miel">
+                    Miel
+                </a>
+
+                <a href="catalogo.html?categoria=gourmet&subcategoria=mermelada">
+                    Mermelada
+                </a>
+
+                <a href="catalogo.html?categoria=gourmet&subcategoria=sazonadores">
+                    Sazonadores
+                </a>
+
+                <a href="catalogo.html?categoria=gourmet&subcategoria=salsas">
+                    Salsas
+                </a>
+
+                <a href="catalogo.html?categoria=gourmet&subcategoria=cacao">
+                    Cacao
+                </a>
+
+                <a href="catalogo.html?categoria=gourmet&subcategoria=untables">
+                    Untables
+                </a>
+
+            
+
+                <a href="catalogo.html?categoria=gourmet&subcategoria=panaderia">
+                    Panadería
+                </a>
+
+       <a href="catalogo.html?categoria=gourmet&subcategoria=te-infusiones">
+    Té e infusiones
+</a>
+
+            </div>
+
+        </div>
+    <a href="catalogo.html?categoria=hogar">
+            Hogar
+        </a>
+<a href="catalogo.html?categoria=nuevos">
+            Nuevos productos
+        </a>
+
+
+        <!-- SNACKS -->
+        <div class="menu-item-desplegable">
+
+            <button type="button" class="submenu-boton">
+                <span>Snacks</span>
+                <span class="submenu-flecha">⌄</span>
+            </button>
+
+            <div class="submenu-bebidas">
+
+                <a href="catalogo.html?categoria=snacks&subcategoria=horneados">
+                    Horneados
+                </a>
+
+                <a href="catalogo.html?categoria=snacks&subcategoria=deshidratados">
+                    Deshidratados
+                </a>
+
+                <a href="catalogo.html?categoria=snacks&subcategoria=salados">
+                    Salados
+                </a>
+
+                <a href="catalogo.html?categoria=snacks&subcategoria=sin-azucar">
+                    Sin azúcar
+                </a>
+
+                <a href="catalogo.html?categoria=snacks&subcategoria=enchilados">
+                    Enchilados
+                </a>
+
+                <a href="catalogo.html?categoria=snacks&subcategoria=dulces">
+                    Dulces
+                </a>
+
+            </div>
+
+        </div>
+
+
+    
+
+        
+    </nav>
+        </div>
+
+    
+
+        
+    </nav>
+        </div>
+
+    </aside>
+
+
+    <div
+        class="overlay-menu"
+        id="overlayMenu">
+    </div>
+
+
+
+    <!-- PRODUCTO -->
+
+    <main class="producto-contenedor">
+
+
+        <div class="producto-foto">
+
+            <img
+                id="imagenProducto"
+                src=""
+                alt=""
+            >
+
+        </div>
+
+
+
+        <div class="producto-info">
+
+
+           <a href="javascript:history.back()" class="regresar">
+    ← Regresar
+</a>
+            <p
+                class="producto-marca"
+                id="marcaProducto">
+            </p>
+
+
+            <h1 id="nombreProducto"></h1>
+
+
+            <p
+                class="producto-presentacion"
+                id="presentacionProducto">
+            </p>
+<div
+    id="presentacionesContainer"
+    class="presentaciones-selector"
+    style="display: none;"
+>
+    <label for="selectorPresentacion">
+        Presentación
+    </label>
+
+    <select id="selectorPresentacion">
+    </select>
+</div>
+
+<div class="precio-presentacion">
+    <span
+        class="producto-precio"
+        id="precioProducto">
+    </span>
+</div>
+
+<div class="producto-separador"></div>
+
+
+            <div class="producto-separador"></div>
+
+
+
+            <div class="producto-textos">
+
+    <div>
+        <h3>Descripción</h3>
+        <p id="descripcionProducto"></p>
+    </div>
+
+    <div>
+        <h3>Ingredientes</h3>
+        <p id="ingredientesProducto"></p>
+    </div>
+
+    <div>
+        <h3>Observaciones</h3>
+        <p id="observacionesProducto"></p>
+    </div>
+
+    <div>
+        <h3>Modo de uso</h3>
+        <p id="modoUsoProducto"></p>
+    </div>
+
+</div>
+
+
+            <!-- SABORES -->
+
+            <div
+                id="saboresContainer"
+                class="sabores-container">
+            </div>
+
+
+
+            <!-- CANTIDAD GENERAL -->
+
+            <div
+                id="cantidadGeneral"
+                class="cantidad-general"
+            >
+
+                <label>
+                    Cantidad
+                </label>
+
+                <div class="selector-cantidad">
+
+                    <button
+                        type="button"
+                        onclick="cambiarCantidad(-1)"
+                    >
+                        −
+                    </button>
+
+
+                    <input
+                        id="cantidad"
+                        type="number"
+                        min="1"
+                        value="1"
+                    >
+
+
+                    <button
+                        type="button"
+                        onclick="cambiarCantidad(1)"
+                    >
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+        <div class="producto-compra">
+
+    <button
+        id="botonAgregar"
+        class="btn-agregar"
+        onclick="agregarAlCarrito()"
+    >
+        Agregar al carrito
+    </button>
+
+</div>
+
+
+        </div>
+
+    </main>
+<!-- =========================
+     CONTACTO
+========================== -->
+
+<style>
+  .banner-contacto {
+    width: 100%;
+    background: #8f9141;
+    color: #fff;
+    padding: 38px 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+  }
+
+  .banner-contacto * {
+    box-sizing: border-box;
+  }
+
+  .banner-contacto .contacto-interior {
+    max-width: 1130px;
+    margin: 0 auto;
+  }
+
+  .banner-contacto h2 {
+    font-family: "Brush Script MT", "Segoe Script", cursive;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #fff;
+    margin: 0 0 22px;
+  }
+
+  .banner-contacto .redes {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .banner-contacto .redes a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    padding: 18px;
+    border: 1px solid #ffffff73;
+    border-radius: 18px;
+    background: transparent;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+    transition: background .2s;
+  }
+
+  .banner-contacto .redes a:hover {
+    background: #ffffff1f;
+  }
+
+  .banner-contacto .redes a:focus-visible {
+    outline: 3px solid #fff;
+    outline-offset: 4px;
+  }
+
+  .banner-contacto .redes strong {
+    font-weight: 700;
+    color: #fff;
+  }
+
+  .banner-contacto .redes span {
+    color: #fff;
+  }
+
+  @media (max-width: 850px) {
+    .banner-contacto .redes {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 500px) {
+    .banner-contacto .redes {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .banner-contacto .redes a {
+      transition: none;
+    }
+  }
+</style>
+
+<!-- BANNER DE CONTACTO -->
+<footer
+  class="banner-contacto"
+  id="contacto"
+  aria-labelledby="titulo-contacto"
+>
+  <div class="contacto-interior">
+    <h2 id="titulo-contacto">Contacto</h2>
+
+    <nav class="redes" aria-label="Redes sociales y contacto">
+      <a
+        href="https://wa.me/525620208237"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <strong>WhatsApp</strong>
+        <span>56 2020 8237</span>
+      </a>
+
+      <a
+        href="https://www.facebook.com/VillaVerdeBoutiqueGourmet"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <strong>Facebook</strong>
+        <span>Villa Verde Boutique Gourmet</span>
+      </a>
+
+      <a
+        href="https://www.instagram.com/villaverdegourmetmx/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <strong>Instagram</strong>
+        <span>@villaverdegourmetmx</span>
+      </a>
+
+      <a href="mailto:rvvgourmet@gmail.com">
+        <strong>Correo</strong>
+        <span>rvvgourmet@gmail.com</span>
+      </a>
+    </nav>
+  </div>
+</footer>
+    <script src="productos.js"></script>
+    <script src="app.js"></script>
+
+
+    <script>
+/* ==================================
+   CAMBIAR PRESENTACIÓN
+================================== */
+
+function cambiarPresentacion(index) {
+
+    if (
+        !producto.presentaciones ||
+        !producto.presentaciones[index]
+    ) {
+        return;
+    }
+
+    presentacionSeleccionada =
+        producto.presentaciones[index];
+
+    // Cambiar precio mostrado
+    document.getElementById("precioProducto").innerText =
+        mostrarPrecio(presentacionSeleccionada.precio);
+
+    // Cambiar imagen si existe una específica
+    document.getElementById("imagenProducto").src =
+        presentacionSeleccionada.imagen || producto.imagen;
+}
+        /* ==================================
+           BUSCAR PRODUCTO
+        ================================== */
+let presentacionSeleccionada = null;
+
+const parametros =
+    new URLSearchParams(window.location.search);
+
+
+        const idProducto =
+            parametros.get("id");
+
+
+        const producto =
+            productos.find(item =>
+                item.id === idProducto
+            );
+
+
+
+        if (!producto) {
+
+            document.querySelector(".producto-contenedor")
+                .innerHTML = `
+
+                    <div class="producto-no-encontrado">
+
+                        <h1>
+                            Producto no encontrado
+                        </h1>
+
+                        <a href="index.html">
+                            Regresar al inicio
+                        </a>
+
+                    </div>
+
+                `;
+
+        } else {
+
+            mostrarProducto();
+
+        }
+
+
+
+
+
+function mostrarPrecio(precio) {
+
+    if (
+        precio === null ||
+        precio === undefined
+    ) {
+        return "Precio por confirmar";
+    }
+
+    return "$" + precio.toFixed(2);
+}
+function mostrarProducto() {
+
+            document.title =
+                producto.nombre + " | Villa Verde";
+
+
+            document.getElementById("imagenProducto").src =
+                producto.imagen;
+
+
+            document.getElementById("imagenProducto").alt =
+                producto.nombre;
+
+
+            document.getElementById("nombreProducto").innerText =
+                producto.nombre;
+
+
+            document.getElementById("marcaProducto").innerText =
+                producto.marca;
+
+
+   
+
+document.getElementById("descripcionProducto").innerText =
+    producto.descripcion || "No especificada.";
+
+document.getElementById("ingredientesProducto").innerText =
+    producto.ingredientes || "No especificados.";
+
+document.getElementById("observacionesProducto").innerText =
+    producto.observaciones || "No especificadas.";
+
+document.getElementById("modoUsoProducto").innerText =
+    producto.modoUso || "No especificado.";
+
+const presentacionProducto =
+    document.getElementById("presentacionProducto");
+
+const presentacionesContainer =
+    document.getElementById("presentacionesContainer");
+
+const selectorPresentacion =
+    document.getElementById("selectorPresentacion");
+
+
+if (
+    producto.presentaciones &&
+    producto.presentaciones.length > 0
+) {
+
+    // Ocultamos el texto normal
+    presentacionProducto.style.display = "none";
+
+    // Mostramos selector
+    presentacionesContainer.style.display = "block";
+
+
+    selectorPresentacion.innerHTML =
+        producto.presentaciones
+            .map((opcion, index) => {
+
+                return `
+                    <option value="${index}">
+                        ${opcion.presentacion}
+                    </option>
+                `;
+
+            })
+            .join("");
+
+
+    // Primera opción por defecto
+    presentacionSeleccionada =
+        producto.presentaciones[0];
+
+
+    selectorPresentacion.onchange = function() {
+
+        cambiarPresentacion(
+            parseInt(this.value)
+        );
+
+    };
+
+
+    // Precio inicial
+    cambiarPresentacion(0);
+
+
+} else {
+
+    presentacionProducto.style.display = "block";
+
+    presentacionesContainer.style.display = "none";
+
+    presentacionProducto.innerText =
+        producto.presentacion;
+
+    document.getElementById("precioProducto").innerText =
+        mostrarPrecio(producto.precio);
+
+}
+
+
+            /* ==============================
+               SI TIENE SABORES
+            ============================== */
+
+            if (producto.sabores && producto.sabores.length > 0) {
+
+
+                document.getElementById("cantidadGeneral")
+                    .style.display = "none";
+
+
+                const saboresContainer =
+                    document.getElementById("saboresContainer");
+
+
+                saboresContainer.innerHTML = `
+
+                    <h3>
+                        Selecciona cantidades por sabor
+                    </h3>
+
+                `;
+
+
+                producto.sabores.forEach((sabor, index) => {
+
+                    saboresContainer.innerHTML += `
+
+                        <div class="sabor-item">
+
+                            <span>
+                                ${sabor}
+                            </span>
+
+
+                            <div class="selector-cantidad">
+
+                                <button
+                                    type="button"
+                                    onclick="cambiarSabor(${index}, -1)"
+                                >
+                                    −
+                                </button>
+
+
+                                <input
+                                    type="number"
+                                    min="0"
+                                    value="0"
+                                    id="sabor-${index}"
+                                >
+
+
+                                <button
+                                    type="button"
+                                    onclick="cambiarSabor(${index}, 1)"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    `;
+
+                });
+
+            }
+
+        }
+
+
+/* ==================================
+   CAMBIAR PRESENTACIÓN
+================================== */
+
+function cambiarPresentacion(index) {
+
+    if (
+        !producto.presentaciones ||
+        !producto.presentaciones[index]
+    ) {
+        return;
+    }
+
+    presentacionSeleccionada =
+        producto.presentaciones[index];
+
+    // Cambiar precio
+    document.getElementById("precioProducto").innerText =
+        mostrarPrecio(presentacionSeleccionada.precio);
+
+    // Cambiar imagen si la presentación tiene imagen
+    document.getElementById("imagenProducto").src =
+        presentacionSeleccionada.imagen || producto.imagen;
+}
+        /* ==================================
+           CAMBIAR CANTIDAD NORMAL
+        ================================== */
+
+        function cambiarCantidad(numero) {
+
+            const input =
+                document.getElementById("cantidad");
+
+
+            let cantidad =
+                parseInt(input.value) || 1;
+
+
+            cantidad += numero;
+
+
+            if (cantidad < 1) {
+                cantidad = 1;
+            }
+
+
+            input.value = cantidad;
+
+        }
+
+
+
+        /* ==================================
+           CAMBIAR CANTIDAD SABORES
+        ================================== */
+
+        function cambiarSabor(index, numero) {
+
+            const input =
+                document.getElementById("sabor-" + index);
+
+
+            let cantidad =
+                parseInt(input.value) || 0;
+
+
+            cantidad += numero;
+
+
+            if (cantidad < 0) {
+                cantidad = 0;
+            }
+
+
+            input.value = cantidad;
+
+        }
+
+
+
+        /* ==================================
+           AGREGAR AL CARRITO
+        ================================== */
+
+        function agregarAlCarrito() {
+
+    let carrito =
+        JSON.parse(localStorage.getItem("carrito")) || [];
+
+    let seAgregoProducto = false;
+
+
+    /* ==================================
+       PRODUCTOS CON SABORES
+    ================================== */
+
+    if (
+        producto.sabores &&
+        producto.sabores.length > 0
+    ) {
+
+        producto.sabores.forEach((sabor, index) => {
+
+            const cantidad =
+                parseInt(
+                    document.getElementById(
+                        "sabor-" + index
+                    ).value
+                ) || 0;
+
+
+            if (cantidad > 0) {
+
+                carrito.push({
+
+                    id: producto.id,
+
+                    nombre: producto.nombre,
+
+                    sabor: sabor,
+
+                    presentacion: presentacionSeleccionada
+                        ? presentacionSeleccionada.presentacion
+                        : producto.presentacion,
+
+                    cantidad: cantidad,
+
+                    precio: presentacionSeleccionada
+                        ? Number(presentacionSeleccionada.precio)
+                        : Number(producto.precio),
+
+                    imagen:
+                        presentacionSeleccionada &&
+                        presentacionSeleccionada.imagen
+                            ? presentacionSeleccionada.imagen
+                            : producto.imagen
+
+                });
+
+                seAgregoProducto = true;
+            }
+
+        });
+
+    } else {
+
+
+        /* ==================================
+           PRODUCTO SIN SABORES
+        ================================== */
+
+        const cantidad =
+            parseInt(
+                document.getElementById("cantidad").value
+            ) || 1;
+
+
+        /* TOMAR PRESENTACIÓN ACTUAL */
+
+        let precioFinal = producto.precio;
+        let presentacionFinal = producto.presentacion;
+        let imagenFinal = producto.imagen;
+
+
+        if (
+            producto.presentaciones &&
+            producto.presentaciones.length > 0
+        ) {
+
+            const selector =
+                document.getElementById("selectorPresentacion");
+
+            const indiceSeleccionado =
+                parseInt(selector.value);
+
+
+            const opcionSeleccionada =
+                producto.presentaciones[indiceSeleccionado];
+
+
+            if (opcionSeleccionada) {
+
+                precioFinal =
+                    opcionSeleccionada.precio;
+
+                presentacionFinal =
+                    opcionSeleccionada.presentacion;
+
+                imagenFinal =
+                    opcionSeleccionada.imagen ||
+                    producto.imagen;
+
+            }
+
+        }
+
+
+        carrito.push({
+
+            id: producto.id,
+
+            nombre: producto.nombre,
+
+            sabor: null,
+
+            presentacion: presentacionFinal,
+
+            cantidad: cantidad,
+
+            precio: Number(precioFinal),
+
+            imagen: imagenFinal
+
+        });
+
+
+        seAgregoProducto = true;
+
+    }
+
+
+
+    if (!seAgregoProducto) {
+
+        alert(
+            "Selecciona al menos una cantidad."
+        );
+
+        return;
+
+    }
+
+
+
+    localStorage.setItem(
+        "carrito",
+        JSON.stringify(carrito)
+    );
+
+
+    actualizarContadorCarrito();
+
+
+
+    const boton =
+        document.getElementById("botonAgregar");
+
+
+    boton.innerText =
+        "Agregado al carrito ✓";
+
+
+    boton.classList.add("agregado");
+
+
+    setTimeout(() => {
+
+        boton.innerText =
+            "Agregar al carrito";
+
+        boton.classList.remove("agregado");
+
+    }, 1800);
+
+}
+
+    </script>
+
+</body>
+
+</html>

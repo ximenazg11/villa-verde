@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mesas gourmet, servicios corporativos y regalos personalizados de Villa Verde Gourmet. Creamos experiencias para cada ocasión.">
+
+  <title>Eventos | Villa Verde Gourmet</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --olivo: #8f9141;
+      --acento: #a4a54f;
+      --tinta: #16130b;
+      --crema: #f7f7ed;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #fff;
+      color: var(--tinta);
+    }
+
+    .volver {
+      position: fixed;
+      top: 25px;
+      left: 30px;
+      z-index: 10;
+      text-decoration: none;
+      color: #67692c;
+      font-size: 16px;
+      font-weight: 600;
+      background: white;
+      padding: 10px 18px;
+      border-radius: 30px;
+      box-shadow: 0 3px 12px #0000001f;
+      transition: .2s;
+    }
+
+    .volver:hover {
+      background: var(--olivo);
+      color: white;
+    }
+
+    .contenedor {
+      max-width: 1200px;
+      margin: auto;
+      padding: 100px 35px 70px;
+    }
+
+    .encabezado {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin-bottom: 35px;
+    }
+
+    .numero {
+      width: 90px;
+      height: 90px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      background: var(--acento);
+      color: white;
+      display: grid;
+      place-items: center;
+      font: 52px Georgia, serif;
+      border: 3px solid white;
+      outline: 2px solid var(--acento);
+      box-shadow: 0 3px 8px #00000014;
+    }
+
+    .eyebrow {
+      color: #67692c;
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(38px, 5vw, 64px);
+      line-height: 1.08;
+      font-weight: 500;
+      letter-spacing: 2px;
+    }
+
+    .titulo-seccion {
+      font-family: "Brush Script MT", "Segoe Script", cursive;
+      color: #7b7d36;
+      font-size: clamp(32px, 4vw, 45px);
+      font-weight: 400;
+      margin-bottom: 18px;
+      line-height: 1.25;
+    }
+
+    p {
+      font-size: clamp(18px, 2vw, 22px);
+      line-height: 1.65;
+      margin-bottom: 18px;
+    }
+
+    .intro {
+      max-width: 900px;
+      margin-bottom: 28px;
+    }
+
+    .atajos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 28px 0 42px;
+    }
+
+    .atajos a {
+      padding: 11px 18px;
+      border-radius: 30px;
+      border: 1px solid #e5e5cd;
+      color: #67692c;
+      text-decoration: none;
+      font-size: 15px;
+      transition: .2s;
+    }
+
+    .atajos a:hover {
+      background: var(--crema);
+      border-color: var(--olivo);
+    }
+
+    .seccion {
+      max-width: 1000px;
+      margin: auto;
+      scroll-margin-top: 90px;
+    }
+
+    .seccion + .seccion {
+      margin-top: 45px;
+    }
+
+    /* DOS CUADRITOS PARA LAS FOTOS DE CADA SECCIÓN */
+    .galeria-seccion {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto 30px;
+    }
+
+    .foto-cuadrada {
+      position: relative;
+      min-width: 0;
+      aspect-ratio: 1 / 1;
+      border-radius: 22px;
+      overflow: hidden;
+      background: linear-gradient(120deg, #eeeedf, #d8d8b9);
+    }
+
+    .foto-cuadrada img {
+      position: absolute;
+      inset: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .servicios {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 24px 0;
+      list-style: none;
+    }
+
+    .servicios li {
+      background: var(--crema);
+      color: #67692c;
+      border: 1px solid #e5e5cd;
+      padding: 11px 18px;
+      border-radius: 30px;
+      font-size: 16px;
+    }
+
+    .compromiso {
+      padding: 36px;
+      background: var(--crema);
+      border: 1px solid #e5e5cd;
+      border-radius: 24px;
+    }
+
+    .firma {
+      border-top: 1px solid #dcdcc2;
+      margin-top: 28px;
+      padding-top: 24px;
+    }
+
+    .firma strong {
+      display: block;
+      font: 26px Georgia, serif;
+      margin-bottom: 8px;
+    }
+
+    .firma span {
+      color: #67692c;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    h3 {
+      font: 26px Georgia, serif;
+      font-weight: 400;
+      margin: 30px 0 22px;
+    }
+
+    .detalles {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px 28px;
+      list-style: none;
+      margin-bottom: 30px;
+    }
+
+    .detalles li {
+      display: flex;
+      gap: 12px;
+      font-size: 18px;
+      line-height: 1.6;
+      padding: 16px 0;
+      border-bottom: 1px solid #e5e5cd;
+    }
+
+    .detalles li::before {
+      content: "✓";
+      color: #67692c;
+      font-weight: bold;
+    }
+
+    .destacado {
+      font-family: Georgia, serif;
+      font-size: clamp(23px, 3vw, 30px);
+      color: #67692c;
+    }
+
+    .cotizacion {
+      text-align: center;
+      background: var(--crema);
+      border: 1px solid #e5e5cd;
+      border-radius: 24px;
+      padding: 45px 30px;
+      margin-top: 50px;
+      scroll-margin-top: 90px;
+    }
+
+    .cotizacion p {
+      max-width: 650px;
+      margin: 0 auto 24px;
+    }
+
+    .campo {
+      max-width: 470px;
+      margin: 0 auto 22px;
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      font-weight: 600;
+      font-size: 14px;
+      color: #595a32;
+      margin-bottom: 10px;
+    }
+
+    select {
+      width: 100%;
+      padding: 15px 12px;
+      border: 1px solid #b3b489;
+      border-radius: 12px;
+      background: white;
+      color: var(--tinta);
+      font: 17px Arial, sans-serif;
+    }
+
+    .boton {
+      display: inline-block;
+      padding: 16px 28px;
+      border: 0;
+      border-radius: 30px;
+      background: var(--olivo);
+      color: white;
+      font: 600 16px Arial, sans-serif;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .boton:hover {
+      background: #767831;
+    }
+
+    .boton:disabled {
+      opacity: .65;
+      cursor: not-allowed;
+    }
+
+    .cotizacion .aviso {
+      font-size: 14px;
+      color: #595a32;
+      margin-top: 16px;
+      margin-bottom: 0;
+    }
+
+    .cierre {
+      text-align: center;
+      padding-top: 55px;
+    }
+
+    .cierre p {
+      font-family: Georgia, serif;
+      color: #67692c;
+    }
+
+    .banner-contacto {
+      background: var(--olivo);
+      color: white;
+      padding: 38px 24px;
+    }
+
+    .contacto-interior {
+      max-width: 1130px;
+      margin: auto;
+    }
+
+    .banner-contacto h2 {
+      font-family: "Brush Script MT", "Segoe Script", cursive;
+      font-size: 38px;
+      font-weight: 400;
+      margin-bottom: 22px;
+    }
+
+    .redes {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .redes a {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding: 18px;
+      border: 1px solid #ffffff73;
+      border-radius: 18px;
+      color: white;
+      text-decoration: none;
+      line-height: 1.45;
+      overflow-wrap: anywhere;
+    }
+
+    .redes a:hover {
+      background: #ffffff1f;
+    }
+
+    a:focus-visible,
+    button:focus-visible,
+    select:focus-visible {
+      outline: 3px solid var(--tinta);
+      outline-offset: 5px;
+    }
+
+    [hidden] {
+      display: none !important;
+    }
+
+    @media (max-width: 850px) {
+      .contenedor {
+        padding: 100px 22px 55px;
+      }
+
+      .encabezado {
+        gap: 20px;
+      }
+
+      .numero {
+        width: 70px;
+        height: 70px;
+        font-size: 40px;
+      }
+
+      .redes {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 500px) {
+      .volver {
+        left: 20px;
+        top: 20px;
+      }
+
+      .encabezado {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .galeria-seccion {
+        max-width: 400px;
+        gap: 12px;
+        margin-bottom: 24px;
+      }
+
+      .foto-cuadrada {
+        border-radius: 16px;
+      }
+
+      .compromiso,
+      .cotizacion {
+        padding: 28px 22px;
+      }
+
+      .detalles,
+      .redes {
+        grid-template-columns: 1fr;
+      }
+
+      .detalles {
+        gap: 0;
+      }
+
+      .atajos a {
+        font-size: 14px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a href="index.html" class="volver">← Inicio</a>
+
+  <main class="contenedor">
+    <header class="encabezado">
+      <div class="numero" aria-hidden="true">✦</div>
+
+      <div>
+        <p class="eyebrow">Villa Verde Gourmet</p>
+        <h1>Eventos</h1>
+      </div>
+    </header>
+
+    <p class="intro">
+      Creamos experiencias que se disfrutan, se comparten y se recuerdan,
+      con propuestas pensadas para cada ocasión y cuidando cada detalle
+      para que tú y tus invitados solo tengan que disfrutar.
+    </p>
+
+    <nav class="atajos" aria-label="Servicios para eventos">
+      <a href="#mesas">Mesas gourmet</a>
+      <a href="#corporativos">Servicios corporativos</a>
+      <a href="#regalos">Regalos corporativos</a>
+      <a href="#cotizar">Cotizar mi evento ↗</a>
+    </nav>
+
+    <!-- MESAS GOURMET -->
+    <section class="seccion" id="mesas" aria-labelledby="titulo-mesas">
+
+      <!-- Cambia las rutas de src por tus dos fotografías. -->
+      <div class="galeria-seccion">
+        <div class="foto-cuadrada">
+          <img
+            src="img/mesas gourmet.webp"
+            alt="Mesa gourmet de Villa Verde"
+            data-foto
+            loading="eager"
+          >
+        </div>
+
+        <div class="foto-cuadrada">
+          <img
+            src="img/mesas gourmet2.webp"
+            alt="Detalle del montaje de una mesa gourmet"
+            data-foto
+            loading="lazy"
+          >
+        </div>
+      </div>
+
+      <p class="eyebrow">Para compartir y disfrutar</p>
+
+      <h2 class="titulo-seccion" id="titulo-mesas">
+        Mesas Gourmet
+      </h2>
+
+      <p>
+        Diseñamos y montamos mesas de quesos, charcutería, productos gourmet,
+        dulces y snacks, para eventos corporativos, sociales y ocasiones especiales.
+      </p>
+
+      <p>
+        Cada montaje se adapta al estilo de tu evento, combinando presentación,
+        sabor y calidad para crear una experiencia única para tus invitados.
+      </p>
+    </section>
+
+    <!-- SERVICIOS CORPORATIVOS -->
+    <section
+      class="seccion"
+      id="corporativos"
+      aria-labelledby="titulo-corporativos"
+    >
+      <div class="galeria-seccion">
+        <div class="foto-cuadrada">
+          <img
+            src="img/corporativo.webp"
+            alt="Servicios corporativos de Villa Verde"
+            data-foto
+            loading="lazy"
+          >
+        </div>
+
+        <div class="foto-cuadrada">
+          <img
+            src="img/corporativo2.webp"
+            alt="Alimentos preparados para un evento corporativo"
+            data-foto
+            loading="lazy"
+          >
+        </div>
+      </div>
+
+      <p class="eyebrow">Cada encuentro merece algo especial</p>
+
+      <h2 class="titulo-seccion" id="titulo-corporativos">
+        Servicios corporativos
+      </h2>
+
+      <p>
+        Creamos opciones de box lunch, desayunos, coffee break y barra de café
+        para empresas, universidades, asociaciones y todo tipo de organizaciones,
+        ideales para reuniones, capacitaciones, congresos, eventos académicos
+        y jornadas de trabajo.
+      </p>
+
+      <ul class="servicios" aria-label="Opciones de servicio">
+        <li>Box lunch</li>
+        <li>Desayunos</li>
+        <li>Coffee break</li>
+        <li>Barra de café</li>
+      </ul>
+
+      <p>
+        Seleccionamos y preparamos cada elemento buscando ofrecer alimentos
+        de calidad, presentaciones cuidadas y opciones prácticas que hagan
+        de cada momento una experiencia agradable.
+      </p>
+    </section>
+
+   <!-- NUESTRO COMPROMISO -->
+<section
+  class="seccion compromiso"
+  aria-labelledby="titulo-compromiso"
+>
+  <h2 class="titulo-seccion" id="titulo-compromiso">
+    Nuestro compromiso
+  </h2>
+
+  <p>
+    En cada evento trabajamos con el mismo objetivo:
+    ofrecer el mejor servicio acompañado de la mejor calidad.
+  </p>
+
+  <p>
+    Nos encargamos de cuidar los detalles, entender las necesidades
+    de cada cliente y crear una propuesta gastronómica que esté
+    a la altura de cada ocasión.
+  </p>
+
+  <div style="text-align: center; margin-top: 28px;">
+    <img
+      src="img/Logo-Villaverde-19.png"
+      alt="Villa Verde Gourmet"
+      loading="lazy"
+      style="display: block; width: 90px; max-width: 100%; height: auto; margin: 0 auto;"
+    >
+  </div>
+</section>
+
+    <!-- REGALOS CORPORATIVOS -->
+    <section
+      class="seccion"
+      id="regalos"
+      aria-labelledby="titulo-regalos"
+    >
+      <div class="galeria-seccion">
+        <div class="foto-cuadrada">
+          <img
+            src="img/regalos2.jpg"
+            alt="Regalos corporativos de Villa Verde"
+            data-foto
+            loading="lazy"
+          >
+        </div>
+
+        <div class="foto-cuadrada">
+          <img
+            src="img/regalos.jpg"
+            alt="Presentación de un regalo gourmet personalizado"
+            data-foto
+            loading="lazy"
+          >
+        </div>
+      </div>
+
+      <p class="eyebrow">Detalles que dejan huella</p>
+
+      <h2 class="titulo-seccion" id="titulo-regalos">
+        Regalos Corporativos
+      </h2>
+
+      <p class="destacado">
+        Celebra, agradece y fortalece tus relaciones con un detalle que deje huella.
+      </p>
+
+      <p>
+        En Villa Verde Gourmet creamos regalos corporativos pensados para
+        sorprender y transmitir el valor que tu empresa comparte con clientes,
+        colaboradores, socios y equipos de trabajo.
+      </p>
+
+      <p>
+        Seleccionamos productos de alta calidad y diseñamos propuestas que
+        combinan sabor y presentación, adaptadas a la ocasión, identidad
+        y necesidades de cada empresa.
+      </p>
+
+      <p>
+        Desde detalles personalizados hasta experiencias gourmet, desarrollamos
+        opciones para reconocer logros, celebrar fechas especiales, dar la
+        bienvenida a nuevos clientes, celebrar el fin de año o simplemente
+        expresar agradecimiento.
+      </p>
+
+      <h3>¿Cómo diseñamos tus regalos?</h3>
+
+      <ul class="detalles">
+        <li>Selección de productos gourmet de alta calidad.</li>
+        <li>Presentaciones elegantes y cuidadosamente diseñadas.</li>
+        <li>Personalización de acuerdo con la identidad de tu empresa.</li>
+        <li>Opciones para diferentes presupuestos y ocasiones.</li>
+        <li>Atención a pedidos corporativos y eventos especiales.</li>
+        <li>Entrega y logística de acuerdo con tus necesidades.</li>
+      </ul>
+
+      <p class="destacado">
+        Convierte cada regalo en una experiencia memorable.
+      </p>
+
+      <p>
+        Cuéntanos qué quieres celebrar y nosotros nos encargamos de crear
+        el detalle perfecto para tu empresa.
+      </p>
+    </section>
+
+    <!-- COTIZACIÓN -->
+    <section
+      class="cotizacion"
+      id="cotizar"
+      aria-labelledby="titulo-cotizar"
+    >
+      <p class="eyebrow">Empecemos a crear tu experiencia</p>
+
+      <h2 class="titulo-seccion" id="titulo-cotizar">
+        Cuéntanos tu idea
+      </h2>
+
+      <p>
+        Llena tu formulario y nosotros nos ponemos en contacto contigo.
+      </p>
+
+      <div id="accion-cotizar">
+        <button
+          class="boton"
+          type="button"
+          disabled
+          aria-describedby="aviso-formulario"
+        >
+          Cotizar mi evento ↗
+        </button>
+      </div>
+
+      <noscript>
+        <p class="aviso">
+          También puedes contactarnos por WhatsApp en los enlaces de abajo.
+        </p>
+      </noscript>
+    </section>
+
+    <div class="cierre">
+      <p>
+        Villa Verde Gourmet<br>
+        Tu evento, nuestra pasión por crear experiencias.
+      </p>
+    </div>
+  </main>
+
+  <footer class="banner-contacto" aria-labelledby="titulo-contacto">
+    <div class="contacto-interior">
+      <h2 id="titulo-contacto">Contacto</h2>
+
+      <nav class="redes" aria-label="Redes sociales y contacto">
+        <a
+          href="https://wa.me/525620208237"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <strong>WhatsApp</strong>
+          <span>56 2020 8237</span>
+        </a>
+
+        <a
+          href="https://www.facebook.com/VillaVerdeBoutiqueGourmet"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <strong>Facebook</strong>
+          <span>Villa Verde Boutique Gourmet</span>
+        </a>
+
+        <a
+          href="https://www.instagram.com/villaverdegourmetmx/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <strong>Instagram</strong>
+          <span>@villaverdegourmetmx</span>
+        </a>
+
+        <a href="mailto:rvvgourmet@gmail.com">
+          <strong>Correo</strong>
+          <span>rvvgourmet@gmail.com</span>
+        </a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    // Pega aquí el enlace de Google Forms cuando esté listo.
+    const enlaceFormulario = "";
+
+    // Opcional: ID de la pregunta de servicio, por ejemplo: entry.123456789.
+    const campoServicioFormulario = "";
+
+    const selector = document.getElementById("servicio");
+
+    if (enlaceFormulario.trim()) {
+      const enlace = document.createElement("a");
+
+      enlace.className = "boton";
+      enlace.textContent = "Cotizar mi evento ↗";
+      enlace.target = "_blank";
+      enlace.rel = "noopener noreferrer";
+
+      const actualizarEnlace = () => {
+        const url = new URL(enlaceFormulario);
+
+        if (campoServicioFormulario && selector.value) {
+          url.searchParams.set("usp", "pp_url");
+          url.searchParams.set(campoServicioFormulario, selector.value);
+        }
+
+        enlace.href = url.href;
+      };
+
+      actualizarEnlace();
+
+      selector.addEventListener("change", actualizarEnlace);
+
+      document.getElementById("accion-cotizar").replaceChildren(enlace);
+      document.getElementById("aviso-formulario").hidden = true;
+    }
+
+    // Conserva los cuadritos si una fotografía aún no está disponible.
+    document.querySelectorAll("[data-foto]").forEach(imagen => {
+      imagen.addEventListener("error", () => {
+        imagen.hidden = true;
+      });
+
+      if (imagen.complete && imagen.naturalWidth === 0) {
+        imagen.hidden = true;
+      }
+    });
+  </script>
+</body>
+</html>

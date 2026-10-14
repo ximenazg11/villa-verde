@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Catálogo | Villa Verde</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<body class="catalogo-page">
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="header">
+
+        <button class="hamburguesa" id="btnMenu">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+
+      <a href="index.html" class="logo">
+    <img
+        src="img/Logo-Villaverde-19.png"
+        alt="Villa Verde"
+        class="logo-imagen"
+    >
+</a>
+
+        <a href="carrito.html" class="carrito-icono">
+
+            🛒
+
+            <span id="contadorCarrito">
+                0
+            </span>
+
+        </a>
+
+    </header>
+
+
+
+    <!-- =========================
+         MENÚ LATERAL
+    ========================== -->
+
+    <aside class="menu-lateral" id="menuLateral">
+
+        <button class="cerrar-menu" id="cerrarMenu">
+            ×
+        </button>
+
+
+        <div class="menu-contenido">
+
+            <p class="menu-subtitulo">
+                EXPLORA
+            </p>
+ <nav>
+
+        <a href="catalogo.html?categoria=aceites-vinagres">
+            Aceites y vinagres
+        </a>
+
+        <!-- BEBIDAS -->
+        <div class="menu-item-desplegable">
+
+            <button type="button" class="submenu-boton">
+                <span>Bebidas</span>
+                <span class="submenu-flecha">⌄</span>
+            </button>
+
+            <div class="submenu-bebidas">
+
+                <a href="catalogo.html?categoria=bebidas&subcategoria=healthy">
+                    Healthy
+                </a>
+
+                <a href="catalogo.html?categoria=bebidas&subcategoria=refrescantes">
+                    Refrescantes
+                </a>
+
+                <a href="catalogo.html?categoria=bebidas&subcategoria=cerveza">
+                    Cerveza
+                </a>
+<a href="catalogo.html?categoria=bebidas&subcategoria=vino">
+                    Vino
+                </a>
+            </div>
+
+        </div>
+<!-- CHARCUTERÍA -->
+        <div class="menu-item-desplegable">
+
+            <button type="button" class="submenu-boton">
+                <span>Charcutería</span>
+                <span class="submenu-flecha">⌄</span>
+            </button>
+
+            <div class="submenu-bebidas">
+
+                <a href="catalogo.html?categoria=charcuteria&subcategoria=quesos">
+                    Quesos
+                </a>
+
+                <a href="catalogo.html?categoria=charcuteria&subcategoria=carnes-frias">
+                    Carnes frías
+                </a>
+
+            </div>
+
+        </div>
+  <a href="catalogo.html?categoria=cuidado-personal">
+            Cuidado personal
+        </a>
+
+        <!-- GOURMET -->
+        <div class="menu-item-desplegable">
+
+            <button type="button" class="submenu-boton">
+                <span>Gourmet</span>
+                <span class="submenu-flecha">⌄</span>
+            </button>
+
+            <div class="submenu-bebidas">
+
+                <a href="catalogo.html?categoria=gourmet&subcategoria=conservas-encurtidos">
+                    Conservas y encurtidos
+                </a>
+
+                <a href="catalogo.html?categoria=gourmet&subcategoria=miel">
+                    Miel
+                </a>
+
+                <a href="catalogo.html?categoria=gourmet&subcategoria=mermelada">
+                    Mermelada
+                </a>
+
+                <a href="catalogo.html?categoria=gourmet&subcategoria=sazonadores">
+                    Sazonadores
+                </a>
+
+                <a href="catalogo.html?categoria=gourmet&subcategoria=salsas">
+                    Salsas
+                </a>
+
+                <a href="catalogo.html?categoria=gourmet&subcategoria=cacao">
+                    Cacao
+                </a>
+
+                <a href="catalogo.html?categoria=gourmet&subcategoria=untables">
+                    Untables
+                </a>
+
+            
+
+                <a href="catalogo.html?categoria=gourmet&subcategoria=panaderia">
+                    Panadería
+                </a>
+
+       <a href="catalogo.html?categoria=gourmet&subcategoria=te-infusiones">
+    Té e infusiones
+</a>
+
+            </div>
+
+        </div>
+    <a href="catalogo.html?categoria=hogar">
+            Hogar
+        </a>
+<a href="catalogo.html?categoria=nuevos">
+            Nuevos productos
+        </a>
+
+
+        <!-- SNACKS -->
+        <div class="menu-item-desplegable">
+
+            <button type="button" class="submenu-boton">
+                <span>Snacks</span>
+                <span class="submenu-flecha">⌄</span>
+            </button>
+
+            <div class="submenu-bebidas">
+
+                <a href="catalogo.html?categoria=snacks&subcategoria=horneados">
+                    Horneados
+                </a>
+
+                <a href="catalogo.html?categoria=snacks&subcategoria=deshidratados">
+                    Deshidratados
+                </a>
+
+                <a href="catalogo.html?categoria=snacks&subcategoria=salados">
+                    Salados
+                </a>
+
+                <a href="catalogo.html?categoria=snacks&subcategoria=sin-azucar">
+                    Sin azúcar
+                </a>
+
+                <a href="catalogo.html?categoria=snacks&subcategoria=enchilados">
+                    Enchilados
+                </a>
+
+                <a href="catalogo.html?categoria=snacks&subcategoria=dulces">
+                    Dulces
+                </a>
+
+            </div>
+
+        </div>
+
+
+    
+
+        
+    </nav>
+        </div>
+
+    </aside>
+
+
+    <div
+        class="overlay-menu"
+        id="overlayMenu">
+    </div>
+
+
+
+    <!-- =========================
+         CATÁLOGO
+    ========================== -->
+
+    <main class="catalogo-contenedor">
+
+
+        <div class="catalogo-titulo">
+
+            <p>
+                VILLA VERDE GOURMET
+            </p>
+
+            <h1 id="tituloCategoria">
+                Productos
+            </h1>
+
+        </div>
+
+
+
+        <div
+            class="productos-grid"
+            id="productosGrid">
+        </div>
+
+
+    </main>
+
+
+<!-- =========================
+     CONTACTO
+========================== -->
+
+<footer class="footer-contacto" id="contacto">
+
+    <div class="footer-contenido">
+
+        <p class="seccion-subtitulo">
+            ESTAMOS PARA TI
+        </p>
+
+        <h2>
+            Contacto
+        </h2>
+
+        <div class="contacto-enlaces">
+
+            <a
+                href="https://wa.me/525620208237"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <strong>WhatsApp:</strong>
+                56 2020 8237
+            </a>
+
+            <a
+                href="https://www.facebook.com/VillaVerdeBoutiqueGourmet"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <strong>Facebook:</strong>
+                Villa Verde Boutique Gourmet
+            </a>
+
+            <a
+                href="https://www.instagram.com/villaverdegourmetmx/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <strong>Instagram:</strong>
+                @villaverdegourmetmx
+            </a>
+
+        </div>
+
+        <p class="footer-marca">
+            Villa Verde Gourmet
+        </p>
+
+    </div>
+
+</footer>
+    <script src="productos.js"></script>
+    <script src="app.js"></script>
+
+
+    <script>
+
+const parametros =
+    new URLSearchParams(window.location.search);
+
+const categoria =
+    parametros.get("categoria") || "bebidas";
+
+const subcategoria =
+    parametros.get("subcategoria");
+
+
+const nombresCategorias = {
+
+    bebidas: "Bebidas",
+    gourmet: "Gourmet",
+    snacks: "Snacks",
+    charcuteria: "Charcutería",
+    tienda: "Tienda",
+    eventos: "Eventos",
+    alimentos: "Alimentos",
+    quesos: "Quesos",
+    "aceites-vinagres": "Aceites y vinagres",
+    hogar: "Hogar",
+    "cuidado-personal": "Cuidado personal",
+    nuevos: "Nuevos productos"
+
+};
+
+
+const nombresSubcategorias = {
+
+    healthy: "Healthy",
+    refrescantes: "Refrescantes",
+    cerveza: "Cerveza",
+    vino: "Vino y licores",
+
+    "conservas-encurtidos": "Conservas y encurtidos",
+    miel: "Miel",
+    mermelada: "Mermelada",
+    sazonadores: "Sazonadores",
+    salsas: "Salsas",
+    cacao: "Cacao",
+    untables: "Untables",
+    panaderia: "Panadería",
+
+    "te-infusiones": "Té e infusiones",
+    
+
+    horneados: "Horneados",
+    deshidratados: "Deshidratados",
+    salados: "Salados",
+    "sin-azucar": "Sin azúcar",
+    enchilados: "Enchilados",
+    dulces: "Dulces",
+
+    quesos: "Quesos",
+    "carnes-frias": "Carnes frías"
+
+};
+
+
+/* ==================================
+   TÍTULO DEL CATÁLOGO
+================================== */
+
+document.getElementById("tituloCategoria").innerText =
+    subcategoria
+        ? nombresSubcategorias[subcategoria] ||
+          nombresCategorias[categoria] ||
+          "Productos"
+        : nombresCategorias[categoria] || "Productos";
+
+
+/* ==================================
+   FILTRAR PRODUCTOS
+================================== */
+
+const productosFiltrados =
+    productos.filter(producto => {
+
+        const coincideCategoria =
+            producto.categoria === categoria;
+
+        const coincideSubcategoria =
+            !subcategoria ||
+            producto.subcategoria === subcategoria;
+
+        return coincideCategoria && coincideSubcategoria;
+
+    });
+
+
+
+        const grid =
+            document.getElementById("productosGrid");
+
+
+
+        if (productosFiltrados.length === 0) {
+
+            grid.innerHTML = `
+
+                <p class="sin-productos">
+                    Próximamente tendremos productos en esta categoría.
+                </p>
+
+            `;
+
+        } else {
+
+            productosFiltrados.forEach(producto => {
+
+                grid.innerHTML += `
+
+                    <a
+                        href="producto.html?id=${producto.id}"
+                        class="producto-card"
+                    >
+
+                        <div class="producto-imagen">
+
+                            <img
+                                src="${producto.imagen}"
+                                alt="${producto.nombre}"
+                            >
+
+                        </div>
+
+
+                        <div class="producto-card-info">
+
+                            <h2>
+                                ${producto.nombre}
+                            </h2>
+
+                            <p>
+                                ${producto.presentacion}
+                            </p>
+
+                           <span>
+    ${
+        producto.precio !== null &&
+        producto.precio !== undefined &&
+        !isNaN(producto.precio)
+            ? `$${Number(producto.precio).toFixed(2)}`
+            : "Precio por confirmar"
+    }
+</span>
+                        </div>
+
+                    </a>
+
+                `;
+
+            });
+
+        }
+
+    </script>
+
+</body>
+
+</html>

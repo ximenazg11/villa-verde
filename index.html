@@ -1,0 +1,623 @@
+    <!DOCTYPE html>
+    <html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Villa Verde Gourmet</title>
+
+        <link rel="stylesheet" href="styles.css">
+            <style>
+            .hero.hero-carrusel {
+                position: relative;
+                display: block;
+                width: 100%;
+                height: auto;
+                min-height: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+            .hero-diapositivas {
+                position: relative;
+                width: 100%;
+                aspect-ratio: 16 / 9;
+            }
+            .hero-carrusel .hero-foto {
+                position: absolute;
+                inset: 0;
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                opacity: 0;
+                transition: opacity 600ms ease;
+            }
+            .hero-carrusel .hero-foto.activa { opacity: 1; }
+            .hero-pausa {
+                position: absolute;
+                right: 16px;
+                bottom: 16px;
+                padding: 8px 14px;
+                border: 1px solid #fff;
+                border-radius: 6px;
+                background: #0009;
+                color: #fff;
+                cursor: pointer;
+            }
+            .hero-pausa:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+            @media (max-width: 600px) {
+                .hero-diapositivas { aspect-ratio: 4 / 3; }
+            }
+            @media (prefers-reduced-motion: reduce) {
+                .hero-carrusel .hero-foto { transition: none; }
+            }
+        </style>
+    <style>
+    .promo-inauguracion {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        background: #67692c;
+        color: #fff;
+        border-top: 1px solid #ffffff40;
+        border-bottom: 1px solid #ffffff40;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .promo-pista {
+        display: flex;
+        width: max-content;
+        animation: promo-desplazar 32s linear infinite;
+    }
+    .promo-grupo {
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+    }
+    .promo-grupo span {
+        display: block;
+        flex-shrink: 0;
+        padding: 16px 28px;
+        white-space: nowrap;
+        font-size: clamp(13px, 1.2vw, 16px);
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        line-height: 1.4;
+    }
+    .promo-grupo span::after { content: ' ✦'; margin-left: 38px; }
+    .promo-inauguracion:hover .promo-pista,
+    .promo-inauguracion:focus .promo-pista { animation-play-state: paused; }
+    .promo-inauguracion:focus-visible { outline: 3px solid #16130b; outline-offset: -3px; }
+    @keyframes promo-desplazar {
+        from { transform: translateX(0); }
+        to { transform: translateX(-50%); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+        .promo-pista { animation: none; width: 100%; }
+        .promo-grupo { width: 100%; justify-content: center; }
+        .promo-grupo span { white-space: normal; text-align: center; }
+        .promo-grupo span:not(:first-child),
+        .promo-grupo[aria-hidden="true"] { display: none; }
+        .promo-grupo span::after { content: none; }
+    }
+</style>
+    </head>
+
+    <body class="home-page">
+
+        <!-- =========================
+            HEADER
+        ========================== -->
+  <header class="header">
+
+    <!-- MENÚ HAMBURGUESA -->
+    <button class="hamburguesa" id="btnMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+
+    <!-- SOBRE NOSOTROS -->
+    <a href="#sobre-nosotros" class="enlace-header enlace-sobre-nosotros">
+        Sobre nosotros
+    </a>
+
+
+    <!-- TIENDA -->
+  <!-- TIENDA -->
+<a href="tienda.html" class="enlace-header enlace-tienda">
+    Tienda
+</a>
+
+    <!-- LOGO / ISOTIPO -->
+    <a href="index.html" class="logo">
+
+        <img
+            src="img/Logo-Villaverde-19.png"
+            alt="Villa Verde"
+            class="logo-imagen"
+        >
+
+    </a>
+<!-- EVENTOS -->
+<a href="eventos.html" class="enlace-header enlace-eventos">
+    Eventos
+</a>
+<!-- PEDIDOS -->
+<a href="pedidos.html" class="enlace-header enlace-pedidos">
+    Pedidos
+</a>
+
+<!-- CONTACTO -->
+<a href="#contacto" class="enlace-header enlace-contacto">
+    Contacto
+</a>
+
+
+    <!-- CARRITO -->
+    <a href="carrito.html" class="carrito-icono">
+
+        🛒
+
+        <span id="contadorCarrito">
+            0
+        </span>
+
+    </a>
+
+</header>
+
+
+        <!-- =========================
+            MENÚ LATERAL
+        ========================== -->
+        <aside class="menu-lateral" id="menuLateral">
+
+            <button class="cerrar-menu" id="cerrarMenu">
+                ×
+            </button>
+
+            <div class="menu-contenido">
+
+                <p class="menu-subtitulo">
+                    EXPLORA
+                </p>
+<nav>
+
+        <a href="catalogo.html?categoria=aceites-vinagres">
+            Aceites y vinagres
+        </a>
+
+        <!-- BEBIDAS -->
+        <div class="menu-item-desplegable">
+
+            <button type="button" class="submenu-boton">
+                <span>Bebidas</span>
+                <span class="submenu-flecha">⌄</span>
+            </button>
+
+            <div class="submenu-bebidas">
+
+                <a href="catalogo.html?categoria=bebidas&subcategoria=healthy">
+                    Healthy
+                </a>
+
+                <a href="catalogo.html?categoria=bebidas&subcategoria=refrescantes">
+                    Refrescantes
+                </a>
+
+                <a href="catalogo.html?categoria=bebidas&subcategoria=cerveza">
+                    Cerveza
+                </a>
+<a href="catalogo.html?categoria=bebidas&subcategoria=vino">
+                    Vino
+                </a>
+            </div>
+
+        </div>
+<!-- CHARCUTERÍA -->
+        <div class="menu-item-desplegable">
+
+            <button type="button" class="submenu-boton">
+                <span>Charcutería</span>
+                <span class="submenu-flecha">⌄</span>
+            </button>
+
+            <div class="submenu-bebidas">
+
+                <a href="catalogo.html?categoria=charcuteria&subcategoria=quesos">
+                    Quesos
+                </a>
+
+                <a href="catalogo.html?categoria=charcuteria&subcategoria=carnes-frias">
+                    Carnes frías
+                </a>
+
+            </div>
+
+        </div>
+  <a href="catalogo.html?categoria=cuidado-personal">
+            Cuidado personal
+        </a>
+
+        <!-- GOURMET -->
+        <div class="menu-item-desplegable">
+
+            <button type="button" class="submenu-boton">
+                <span>Gourmet</span>
+                <span class="submenu-flecha">⌄</span>
+            </button>
+
+            <div class="submenu-bebidas">
+
+                <a href="catalogo.html?categoria=gourmet&subcategoria=conservas-encurtidos">
+                    Conservas y encurtidos
+                </a>
+
+                <a href="catalogo.html?categoria=gourmet&subcategoria=miel">
+                    Miel
+                </a>
+
+                <a href="catalogo.html?categoria=gourmet&subcategoria=mermelada">
+                    Mermelada
+                </a>
+
+                <a href="catalogo.html?categoria=gourmet&subcategoria=sazonadores">
+                    Sazonadores
+                </a>
+
+                <a href="catalogo.html?categoria=gourmet&subcategoria=salsas">
+                    Salsas
+                </a>
+
+                <a href="catalogo.html?categoria=gourmet&subcategoria=cacao">
+                    Cacao
+                </a>
+
+                <a href="catalogo.html?categoria=gourmet&subcategoria=untables">
+                    Untables
+                </a>
+
+            
+
+                <a href="catalogo.html?categoria=gourmet&subcategoria=panaderia">
+                    Panadería
+                </a>
+
+       <a href="catalogo.html?categoria=gourmet&subcategoria=te-infusiones">
+    Té e infusiones
+</a>
+
+            </div>
+
+        </div>
+    <a href="catalogo.html?categoria=hogar">
+            Hogar
+        </a>
+<a href="catalogo.html?categoria=nuevos">
+            Nuevos productos
+        </a>
+
+
+        <!-- SNACKS -->
+        <div class="menu-item-desplegable">
+
+            <button type="button" class="submenu-boton">
+                <span>Snacks</span>
+                <span class="submenu-flecha">⌄</span>
+            </button>
+
+            <div class="submenu-bebidas">
+
+                <a href="catalogo.html?categoria=snacks&subcategoria=horneados">
+                    Horneados
+                </a>
+
+                <a href="catalogo.html?categoria=snacks&subcategoria=deshidratados">
+                    Deshidratados
+                </a>
+
+                <a href="catalogo.html?categoria=snacks&subcategoria=salados">
+                    Salados
+                </a>
+
+                <a href="catalogo.html?categoria=snacks&subcategoria=sin-azucar">
+                    Sin azúcar
+                </a>
+
+                <a href="catalogo.html?categoria=snacks&subcategoria=enchilados">
+                    Enchilados
+                </a>
+
+                <a href="catalogo.html?categoria=snacks&subcategoria=dulces">
+                    Dulces
+                </a>
+
+            </div>
+
+        </div>
+
+
+    
+
+        
+    </nav>
+        </div>
+
+    
+
+        
+    </nav>
+            </div>
+
+        </aside>
+
+
+        <!-- OSCURECER PÁGINA AL ABRIR MENÚ -->
+        <div class="overlay-menu" id="overlayMenu"></div>
+
+
+
+        <!-- =========================
+            IMAGEN PRINCIPAL
+        ========================== -->
+    
+    <main class="hero hero-carrusel" aria-label="Fotos de Villa Verde Gourmet" aria-roledescription="carrusel">
+        <div class="hero-diapositivas">
+            <img src="img/unoc.webp" alt="Villa Verde Gourmet — foto 1" class="hero-foto activa" aria-hidden="false" fetchpriority="high">
+            <img src="img/dosc.webp" alt="Villa Verde Gourmet — foto 2" class="hero-foto" aria-hidden="true">
+            <img src="img/tresc.webp" alt="Villa Verde Gourmet — foto 3" class="hero-foto" aria-hidden="true">
+            <img src="img/cuatroc.webp" alt="Villa Verde Gourmet — foto 4" class="hero-foto" aria-hidden="true">
+            <img src="img/cincoc.webp" alt="Villa Verde Gourmet — foto 5" class="hero-foto" aria-hidden="true">
+        </div>
+        <button type="button" class="hero-pausa" aria-label="Pausar carrusel">Pausar</button>
+    </main>
+    <!-- BANNER DE INAUGURACIÓN -->
+    <div class="promo-inauguracion" role="region" aria-label="5% de descuento el 19 de Octubre por inauguración de página" tabindex="0">
+        <div class="promo-pista" aria-hidden="true">
+            <div class="promo-grupo"><span>10% de descuento más envio gratis en tu primera compra del 19 al 20 de novimebre del 2026</span><span>10% de descuento más envio gratis en tu primera compra del 19 al 20 de novimebre del 2026</span></div>
+            <div class="promo-grupo" aria-hidden="true"><span>10% de descuento más envio gratis en tu primera compra del 19 al 20 de novimebre del 2026</span><span>10% de descuento más envio gratis en tu primera compra del 19 al 20 de novimebre del 2026</span><span>10% de descuento más envio gratis en tu primera compra del 19 al 20 de novimebre del 2026</span></div>
+        </div>
+    </div>
+
+
+    <!-- =========================
+        SOBRE NOSOTROS
+    ========================== -->
+
+  <section class="sobre-nosotros" id="sobre-nosotros">
+
+    <div class="seccion-contenido">
+
+        <p class="seccion-subtitulo">
+            CONÓCENOS
+        </p>
+
+        <h2>
+            Sobre nosotros
+        </h2>
+
+        <p class="sobre-nosotros-texto">
+            En Villaverde Gourmet creemos que disfrutar algo delicioso
+            también puede convertirse en una experiencia que conecta
+            personas, historias y sueños. Somos un rinconcito gourmet
+            creado para descubrir y disfrutar productos cuidadosamente
+            seleccionados y elaborados con pasión,cada visita se
+            conviertan en una experiencia memorable.
+        </p>
+
+        <p class="sobre-nosotros-texto">
+            Nuestra esencia nace de la calidad con propósito, la
+            hospitalidad y el consumo consciente. Queremos que cada
+            persona que nos visite se sienta bienvenida, descubra
+            nuevos sabores y encuentre ese lugar especial al que
+            siempre quiera regresar.
+        </p>
+
+        <p class="sobre-nosotros-texto">
+            También creemos profundamente en el talento mexicano.
+            Por eso, buscamos ser un espacio que impulse a
+            emprendedores, productores y proyectos nacionales que
+            compartan nuestra pasión por crear productos auténticos,
+            innovadores y hechos con dedicación.
+        </p>
+
+        <p class="sobre-nosotros-texto">
+            Más que una tienda gourmet, queremos construir una
+            comunidad: un espacio para disfrutar, descubrir y
+            conectar con personas que valoran la calidad, el origen
+            de los productos y las buenas experiencias.
+        </p>
+
+        <p class="sobre-nosotros-texto">
+            Alimentar momentos, impulsar sueños y crear experiencias.
+        </p>
+
+    </div>
+
+</section>
+
+
+    <!-- =========================
+        CONTACTO
+    ========================== -->
+
+    <style>
+  .banner-contacto {
+    width: 100%;
+    background: #8f9141;
+    color: #fff;
+    padding: 38px 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+  }
+
+  .banner-contacto * {
+    box-sizing: border-box;
+  }
+
+  .banner-contacto .contacto-interior {
+    max-width: 1130px;
+    margin: 0 auto;
+  }
+
+  .banner-contacto h2 {
+    font-family: "Brush Script MT", "Segoe Script", cursive;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #fff;
+    margin: 0 0 22px;
+  }
+
+  .banner-contacto .redes {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .banner-contacto .redes a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    padding: 18px;
+    border: 1px solid #ffffff73;
+    border-radius: 18px;
+    background: transparent;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+    transition: background .2s;
+  }
+
+  .banner-contacto .redes a:hover {
+    background: #ffffff1f;
+  }
+
+  .banner-contacto .redes a:focus-visible {
+    outline: 3px solid #fff;
+    outline-offset: 4px;
+  }
+
+  .banner-contacto .redes strong {
+    font-weight: 700;
+    color: #fff;
+  }
+
+  .banner-contacto .redes span {
+    color: #fff;
+  }
+
+  @media (max-width: 850px) {
+    .banner-contacto .redes {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 500px) {
+    .banner-contacto .redes {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .banner-contacto .redes a {
+      transition: none;
+    }
+  }
+</style>
+
+<!-- BANNER DE CONTACTO -->
+<footer
+  class="banner-contacto"
+  id="contacto"
+  aria-labelledby="titulo-contacto"
+>
+  <div class="contacto-interior">
+    <h2 id="titulo-contacto">Contacto</h2>
+
+    <nav class="redes" aria-label="Redes sociales y contacto">
+      <a
+        href="https://wa.me/525620208237"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <strong>WhatsApp</strong>
+        <span>56 2020 8237</span>
+      </a>
+
+      <a
+        href="https://www.facebook.com/VillaVerdeBoutiqueGourmet"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <strong>Facebook</strong>
+        <span>Villa Verde Boutique Gourmet</span>
+      </a>
+
+      <a
+        href="https://www.instagram.com/villaverdegourmetmx/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <strong>Instagram</strong>
+        <span>@villaverdegourmetmx</span>
+      </a>
+
+      <a href="mailto:rvvgourmet@gmail.com">
+        <strong>Correo</strong>
+        <span>rvvgourmet@gmail.com</span>
+      </a>
+    </nav>
+  </div>
+</footer>
+
+
+        <script src="app.js"></script>
+        
+
+            <script>
+            (() => {
+                const carrusel = document.querySelector('.hero-carrusel');
+                const fotos = carrusel.querySelectorAll('.hero-foto');
+                const boton = carrusel.querySelector('.hero-pausa');
+                let indice = 0;
+                let pausado = false;
+                let temporizador;
+
+                function siguienteFoto() {
+                    fotos[indice].classList.remove('activa');
+                    fotos[indice].setAttribute('aria-hidden', 'true');
+                    indice = (indice + 1) % fotos.length;
+                    fotos[indice].classList.add('activa');
+                    fotos[indice].setAttribute('aria-hidden', 'false');
+                }
+
+                function actualizarTemporizador() {
+                    clearInterval(temporizador);
+                    if (!pausado && !document.hidden) {
+                        temporizador = setInterval(siguienteFoto, 3000);
+                    }
+                }
+
+                boton.addEventListener('click', () => {
+                    pausado = !pausado;
+                    boton.textContent = pausado ? 'Reanudar' : 'Pausar';
+                    boton.setAttribute('aria-label', pausado ? 'Reanudar carrusel' : 'Pausar carrusel');
+                    actualizarTemporizador();
+                });
+                document.addEventListener('visibilitychange', actualizarTemporizador);
+                actualizarTemporizador();
+            })();
+        </script>
+    </body>
+
+    </html>
+        

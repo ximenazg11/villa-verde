@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos | Villa Verde Gourmet</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, Helvetica, sans-serif; background: #fff; color: #16130b; }
+        .volver { position: fixed; top: 25px; left: 30px; z-index: 10; text-decoration: none; color: #67692c; font-size: 16px; font-weight: 600; background: #fff; padding: 10px 18px; border-radius: 30px; box-shadow: 0 3px 12px #0000001f; transition: background .2s, color .2s; }
+        .volver:hover { background: #8f9141; color: #fff; }
+        .contenedor { max-width: 1000px; margin: auto; padding: 90px 35px 70px; }
+        .encabezado { text-align: center; margin-bottom: 38px; }
+        .isotipo { display: block; width: 100px; height: auto; margin: 0 auto 28px; }
+        h1 { font-family: Georgia, "Times New Roman", serif; font-size: clamp(38px, 5vw, 64px); font-weight: 500; letter-spacing: 2px; line-height: 1.1; margin-bottom: 18px; }
+        .introduccion { max-width: 650px; margin: auto; font-size: 20px; line-height: 1.65; }
+        .titulo-seccion { font-family: "Brush Script MT", "Segoe Script", cursive; color: #67692c; font-size: clamp(34px, 4vw, 45px); font-weight: 400; text-align: center; margin-bottom: 30px; }
+        .pasos { list-style: none; counter-reset: paso; display: grid; gap: 20px; }
+        .pasos li { counter-increment: paso; display: flex; align-items: flex-start; gap: 26px; padding: 28px 32px; background: #f7f7ed; border: 1px solid #e5e5cd; border-radius: 24px; }
+        .pasos li::before { content: counter(paso); flex-shrink: 0; width: 64px; height: 64px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: #a4a54f; color: #fff; font: 38px Georgia, serif; border: 3px solid #fff; outline: 2px solid #a4a54f; }
+        .pasos h3 { font: 500 clamp(22px, 3vw, 27px) Georgia, serif; line-height: 1.3; margin-bottom: 10px; }
+        .pasos p { font-size: 18px; line-height: 1.65; }
+        .acciones { display: flex; justify-content: center; flex-wrap: wrap; gap: 14px; margin-top: 32px; }
+        .boton { display: inline-block; padding: 15px 24px; border-radius: 30px; background: #8f9141; color: #fff; font-size: 16px; font-weight: 600; text-decoration: none; }
+        .boton:hover { background: #67692c; }
+        .boton-secundario { background: #fff; color: #67692c; border: 1px solid #8f9141; }
+        .boton-secundario:hover { color: #fff; }
+        .cierre { text-align: center; font-size: 19px; line-height: 1.65; margin: 36px auto 0; max-width: 650px; }
+        .logo-final { display: flex; justify-content: center; margin-top: 45px; }
+        .logo-final img { display: block; width: min(550px, 90%); height: auto; object-fit: contain; }
+        .banner-contacto { background: #8f9141; color: #fff; padding: 38px 24px; }
+        .contacto-interior { max-width: 1130px; margin: auto; }
+        .banner-contacto h2 { font-family: "Brush Script MT", "Segoe Script", cursive; font-size: 38px; font-weight: 400; margin-bottom: 22px; }
+        .redes { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+        .redes a { display: flex; flex-direction: column; gap: 8px; padding: 18px; border: 1px solid #ffffff73; border-radius: 18px; color: #fff; text-decoration: none; line-height: 1.45; overflow-wrap: anywhere; }
+        .redes a:hover { background: #ffffff1f; }
+        a:focus-visible { outline: 3px solid #16130b; outline-offset: 5px; }
+        @media (max-width: 850px) { .redes { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+        @media (max-width: 500px) {
+            .volver { top: 18px; left: 18px; }
+            .contenedor { padding: 95px 22px 50px; }
+            .isotipo { width: 80px; }
+            .introduccion { font-size: 18px; }
+            .pasos li { padding: 24px; gap: 18px; flex-direction: column; }
+            .pasos li::before { width: 52px; height: 52px; font-size: 30px; }
+            .pasos p { font-size: 17px; }
+            .acciones { flex-direction: column; text-align: center; }
+            .redes { grid-template-columns: 1fr; }
+        }
+        @media (prefers-reduced-motion: reduce) { .volver { transition: none; } }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="volver">← Inicio</a>
+    <main class="contenedor">
+        <header class="encabezado">
+            <img src="img/Logo-Villaverde-19.png" alt="Villa Verde Gourmet" class="isotipo">
+            <h1>Pedidos</h1>
+            <p class="introduccion">Tus favoritos de Villa Verde Gourmet, en unos cuantos pasos. Elige lo que más te guste y te ayudamos a coordinar tu pedido por WhatsApp.</p>
+        </header>
+        <section aria-labelledby="titulo-pasos">
+            <h2 class="titulo-seccion" id="titulo-pasos">¿Cómo pedir?</h2>
+            <ol class="pasos">
+                <li>
+                    <div>
+                        <h3>Agrega tus productos al carrito</h3>
+                        <p>Explora nuestro catálogo y agrega los productos que quieras pedir. Antes de continuar, revisa las cantidades en tu carrito.</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>Envía tu pedido por WhatsApp</h3>
+                        <p>En el carrito, presiona el botón <strong>“Enviar productos por WhatsApp”</strong>. Se abrirá WhatsApp con la lista de tus productos; envía el mensaje para que podamos atenderte.</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>Espera nuestra confirmación</h3>
+                        <p>Por WhatsApp te confirmaremos la disponibilidad de tus productos, el total de tu pedido, la fecha de entrega y los datos para realizar tu transferencia.</p>
+                    </div>
+                </li>
+            </ol>
+            <div class="acciones">
+                <a href="carrito.html" class="boton">Ir a mi carrito</a>
+                <a href="https://wa.me/525620208237" class="boton boton-secundario" target="_blank" rel="noopener noreferrer">¿Tienes dudas? Escríbenos</a>
+            </div>
+            <p class="cierre">Gracias por elegir Villa Verde Gourmet.<br>¡Nos encantará ser parte de tus momentos especiales!</p>
+        </section>
+        <div class="logo-final">
+            <img src="img/muñeca.jpg" alt="Muñeca de Villa Verde Gourmet" loading="lazy">
+        </div>
+    </main>
+    <!-- CONTACTO -->
+    <footer
+        class="banner-contacto"
+        aria-labelledby="titulo-contacto">
+
+        <div class="contacto-interior">
+            <h2 id="titulo-contacto">Contacto</h2>
+
+            <nav class="redes" aria-label="Redes sociales y contacto">
+                <a
+                    href="https://wa.me/525620208237"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <strong>WhatsApp</strong>
+                    <span>56 2020 8237</span>
+                </a>
+
+                <a
+                    href="https://www.facebook.com/VillaVerdeBoutiqueGourmet"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <strong>Facebook</strong>
+                    <span>Villa Verde Boutique Gourmet</span>
+                </a>
+
+                <a
+                    href="https://www.instagram.com/villaverdegourmetmx/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <strong>Instagram</strong>
+                    <span>@villaverdegourmetmx</span>
+                </a>
+
+                <a href="mailto:rvvgourmet@gmail.com">
+                    <strong>Correo</strong>
+                    <span>rvvgourmet@gmail.com</span>
+                </a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
