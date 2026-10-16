@@ -1523,7 +1523,7 @@ const productos = [
     modoUso: "Listos para consumir.",
     descripcion: "No especificada.",
     sabores: [
-        "coliflor fuego",
+        "Coliflor fuego",
         "Brocolí salsas negras"
     ]
 },
@@ -2246,22 +2246,7 @@ id: "pretzel-100g",
         "Fortaleza capilar"
     ]
 },
-{
 
-id: "acondicionador-bio-sana-150g",
-    nombre: "Acondicionador",
-    categoria: "cuidado-personal",
-    subcategoria: "acondicionador",
-    marca: "Bio Sana",
-    presentacion: "150 gr",
-    precio: 220,
-    imagen: "img/acondicionador-bio-sana-150g.webp",
-    ingredientes: "Aceites esenciales importados de árbol del té y eucalipto, óxido de zinc, bicarbonato de sodio, aceite de almendras dulces y almidón de maíz.",
-    observaciones: "Conservar en un lugar fresco y seco.",
-    modoUso: "No especificado.",
-    descripcion: "Producto elaborado sin sustancias químicas.",
-    sabores: null
-},
 /////acietes y vinagres\\\\\\\
 {
     id: "vinagre-sidra-manzana-solarina-750ml",
