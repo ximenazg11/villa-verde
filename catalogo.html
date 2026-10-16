@@ -279,55 +279,143 @@
      CONTACTO
 ========================== -->
 
-<footer class="footer-contacto" id="contacto">
+<!-- =========================
+     CONTACTO
+========================== -->
 
-    <div class="footer-contenido">
+<style>
+  .banner-contacto {
+    width: 100%;
+    background: #8f9141;
+    color: #fff;
+    padding: 38px 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+  }
 
-        <p class="seccion-subtitulo">
-            ESTAMOS PARA TI
-        </p>
+  .banner-contacto * {
+    box-sizing: border-box;
+  }
 
-        <h2>
-            Contacto
-        </h2>
+  .banner-contacto .contacto-interior {
+    max-width: 1130px;
+    margin: 0 auto;
+  }
 
-        <div class="contacto-enlaces">
+  .banner-contacto h2 {
+    font-family: "Brush Script MT", "Segoe Script", cursive;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #fff;
+    margin: 0 0 22px;
+  }
 
-            <a
-                href="https://wa.me/525620208237"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                <strong>WhatsApp:</strong>
-                56 2020 8237
-            </a>
+  .banner-contacto .redes {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+    margin: 0;
+    padding: 0;
+  }
 
-            <a
-                href="https://www.facebook.com/VillaVerdeBoutiqueGourmet"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                <strong>Facebook:</strong>
-                Villa Verde Boutique Gourmet
-            </a>
+  .banner-contacto .redes a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    padding: 18px;
+    border: 1px solid #ffffff73;
+    border-radius: 18px;
+    background: transparent;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+    transition: background .2s;
+  }
 
-            <a
-                href="https://www.instagram.com/villaverdegourmetmx/"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                <strong>Instagram:</strong>
-                @villaverdegourmetmx
-            </a>
+  .banner-contacto .redes a:hover {
+    background: #ffffff1f;
+  }
 
-        </div>
+  .banner-contacto .redes a:focus-visible {
+    outline: 3px solid #fff;
+    outline-offset: 4px;
+  }
 
-        <p class="footer-marca">
-            Villa Verde Gourmet
-        </p>
+  .banner-contacto .redes strong {
+    font-weight: 700;
+    color: #fff;
+  }
 
-    </div>
+  .banner-contacto .redes span {
+    color: #fff;
+  }
 
+  @media (max-width: 850px) {
+    .banner-contacto .redes {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 500px) {
+    .banner-contacto .redes {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .banner-contacto .redes a {
+      transition: none;
+    }
+  }
+</style>
+
+<!-- BANNER DE CONTACTO -->
+<footer
+  class="banner-contacto"
+  id="contacto"
+  aria-labelledby="titulo-contacto"
+>
+  <div class="contacto-interior">
+    <h2 id="titulo-contacto">Contacto</h2>
+
+    <nav class="redes" aria-label="Redes sociales y contacto">
+      <a
+        href="https://wa.me/525620208237"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <strong>WhatsApp</strong>
+        <span>56 2020 8237</span>
+      </a>
+
+      <a
+        href="https://www.facebook.com/VillaVerdeBoutiqueGourmet"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <strong>Facebook</strong>
+        <span>Villa Verde Boutique Gourmet</span>
+      </a>
+
+      <a
+        href="https://www.instagram.com/villaverdegourmetmx/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <strong>Instagram</strong>
+        <span>@villaverdegourmetmx</span>
+      </a>
+
+      <a href="mailto:rvvgourmet@gmail.com">
+        <strong>Correo</strong>
+        <span>rvvgourmet@gmail.com</span>
+      </a>
+    </nav>
+  </div>
 </footer>
     <script src="productos.js"></script>
     <script src="app.js"></script>
