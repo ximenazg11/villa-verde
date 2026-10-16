@@ -689,17 +689,16 @@
       <p>
         Llena tu formulario y nosotros nos ponemos en contacto contigo.
       </p>
-
-      <div id="accion-cotizar">
-        <button
-          class="boton"
-          type="button"
-          disabled
-          aria-describedby="aviso-formulario"
-        >
-          Cotizar mi evento ↗
-        </button>
-      </div>
+<div id="accion-cotizar">
+  <a
+    class="boton"
+    href="https://forms.gle/86FnM5zceQU4nJjt9"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Cotizar mi evento ↗
+  </a>
+</div>
 
       <noscript>
         <p class="aviso">
@@ -757,40 +756,7 @@
   </footer>
 
   <script>
-    // Pega aquí el enlace de Google Forms cuando esté listo.
-    const enlaceFormulario = "";
-
-    // Opcional: ID de la pregunta de servicio, por ejemplo: entry.123456789.
-    const campoServicioFormulario = "";
-
-    const selector = document.getElementById("servicio");
-
-    if (enlaceFormulario.trim()) {
-      const enlace = document.createElement("a");
-
-      enlace.className = "boton";
-      enlace.textContent = "Cotizar mi evento ↗";
-      enlace.target = "_blank";
-      enlace.rel = "noopener noreferrer";
-
-      const actualizarEnlace = () => {
-        const url = new URL(enlaceFormulario);
-
-        if (campoServicioFormulario && selector.value) {
-          url.searchParams.set("usp", "pp_url");
-          url.searchParams.set(campoServicioFormulario, selector.value);
-        }
-
-        enlace.href = url.href;
-      };
-
-      actualizarEnlace();
-
-      selector.addEventListener("change", actualizarEnlace);
-
-      document.getElementById("accion-cotizar").replaceChildren(enlace);
-      document.getElementById("aviso-formulario").hidden = true;
-    }
+  
 
     // Conserva los cuadritos si una fotografía aún no está disponible.
     document.querySelectorAll("[data-foto]").forEach(imagen => {
