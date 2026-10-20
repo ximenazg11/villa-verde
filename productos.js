@@ -5,29 +5,6 @@ const productos = [
     ================================================== */
 
     {
-        id: "kombucha",
-        nombre: "Kombucha",
-        categoria: "bebidas",
-        subcategoria: "refrescantes",
-        marca: "Villa Verde",
-        presentacion: "473 ml",
-        precio: 80,
-        imagen: "img/kombucha.webp",
-        descripcion: "Bebida fermentada refrescante elaborada artesanalmente.",
-        ingredientes: "Agua filtrada, té verde, azúcar de caña y cultivo de kombucha.",
-        observaciones: "Conservar en refrigeración.",
-        modoUso: "Consumir fría.",
-        sabores: [
-            "Jamaica",
-            "Manzana Verde",
-            "Guayaba",
-            "Jengibre",
-            "Frambuesa",
-            "Durazno"
-        ]
-    },
-
-    {
         id: "ginger-birra",
         nombre: "Ginger Birra",
         categoria: "bebidas",
@@ -124,6 +101,28 @@ const productos = [
         sabores: null
     },
 
+    {
+        id: "kombucha",
+        nombre: "Kombucha",
+       categoria: "bebidas",
+        subcategoria: "healthy",
+        marca: "Villa Verde",
+        presentacion: "473 ml",
+        precio: 80,
+        imagen: "img/kombucha.webp",
+        descripcion: "Bebida fermentada refrescante elaborada artesanalmente.",
+        ingredientes: "Agua filtrada, té verde, azúcar de caña y cultivo de kombucha.",
+        observaciones: "Conservar en refrigeración.",
+        modoUso: "Consumir fría.",
+        sabores: [
+            "Jamaica",
+            "Manzana Verde",
+            "Guayaba",
+            "Jengibre",
+            "Frambuesa",
+            "Durazno"
+        ]
+    },
 
 
     /* ==================================================
