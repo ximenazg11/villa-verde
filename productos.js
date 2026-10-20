@@ -661,7 +661,7 @@ const productos = [
     },
 
     {
-        id: "salsas",
+        id: "salsas1",
         nombre: "Salsa chapumacha",
         categoria: "gourmet",
         subcategoria: "salsas",
@@ -676,7 +676,7 @@ const productos = [
         sabores: null 
     },
     {
-        id: "salsas",
+        id: "salsas2",
         nombre: "Salsa mavi",
         categoria: "gourmet",
         subcategoria: "salsas",
@@ -691,7 +691,7 @@ const productos = [
         sabores: null 
     },
 {
-        id: "salsas",
+        id: "salsas3",
         nombre: "Salsa Macha",
         categoria: "gourmet",
         subcategoria: "salsas",
@@ -706,7 +706,7 @@ const productos = [
         sabores: null 
     },
     {
-        id: "salsas",
+        id: "salsas4",
         nombre: "Salsa Macha tradicional",
         categoria: "gourmet",
         subcategoria: "salsas",
@@ -721,7 +721,7 @@ const productos = [
         sabores: null 
     },
      {
-        id: "salsas",
+        id: "salsas5",
         nombre: "Salsa Macha con miel",
         categoria: "gourmet",
         subcategoria: "salsas",
