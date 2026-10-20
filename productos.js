@@ -435,8 +435,8 @@ const productos = [
     marca: "Pawa",
 
     // Presentación inicial
-    presentacion: "50 gr",
-    precio: 175,
+    presentacion: "150 gr",
+    precio: 60,
     imagen: "img/mielcruda.webp",
 
     // Presentaciones disponibles
@@ -456,7 +456,7 @@ const productos = [
     ingredientes: "Miel cruda de abeja.",
     observaciones: "No especificadas.",
     modoUso: "No especificado.",
-    descripcion: "Miel cruda de abeja de la marca Pawa.",
+    descripcion: "Miel cruda de abeja de la marca Pawa, variedades mezquite y mantequilla",
     sabores: null
 },
 
@@ -467,19 +467,20 @@ const productos = [
         subcategoria: "miel",
         marca: "Pantry Clean Food",
         presentacion: "150 gr",
-        precio: null,
+        precio: 170,
         imagen: "img/Miel Trufada.webp",
         ingredientes: "Miel cruda de abeja y aceite de trufa blanca.",
         observaciones: "Conservar en un lugar fresco y seco.",
         modoUso: "Ideal para acompañar quesos y carnes saladas, así como para marinados o aderezos.",
         descripcion: "Producto aromático ideal como aderezo.",
-       sabores: [
-            "Miel antigripal",
-            "Miel jengibre - cúrcuma",
-            "Miel Trufada",
-            "Miel citricos",
-            "Miel ajo negro"
+     sabores: [
+            "Miel antigripal 240gr",
+            "Miel jengibre - cúrcuma 270gr",
+            "Miel Trufada 150gr",
+            "Miel citricos 280gr",
+            "Miel ajo negro 230gr"
         ]
+        
     },
     {
         id: "miel-ifusionada",
@@ -487,20 +488,20 @@ const productos = [
         categoria: "gourmet",
         subcategoria: "miel",
         marca: "Pantry Clean Food",
-        presentacion: "56,7 gr",
-        precio: null,
+        presentacion: "150 gr/ 280gr",
+        precio: 65,
         imagen: "img/Miel Citricos.webp",
         ingredientes: "Miel cruda de abeja y aceites esenciales de cáscara de limón, naranja y mandarina.",
         observaciones: "Conservar en un lugar fresco y seco.",
         modoUso: "Ideal para diluir en agua caliente con limón o utilizar como endulzante en yogurt y recetas.",
         descripcion: "Miel aromatizada con aceites esenciales de cítricos.",
-        sabores: [
+         sabores: [
             "Miel antigripal",
             "Miel jengibre - cúrcuma",
             "Miel Trufada",
             "Miel citricos",
             "Miel ajo negro"
-        ]
+         ]
     },
     
 
