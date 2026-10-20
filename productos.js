@@ -937,7 +937,7 @@ const productos = [
         categoria: "gourmet",
         subcategoria: "panaderia",
         marca: "Breana's Toast",
-        presentacion: "Presentación no especificada",
+        presentacion: "142 gr",
         precio: 150,
         imagen: "img/flat.webp",
         ingredientes: "No especificados.",
@@ -956,6 +956,8 @@ const productos = [
         categoria: "gourmet",
         subcategoria: "panaderia",
         marca: "Rancho Villa Verde",
+        ///presentacion inicial///
+        presentacion: "1 kg",
       presentaciones: [
         {
             presentacion: "500 gr",
@@ -1004,6 +1006,8 @@ const productos = [
         categoria: "gourmet",
         subcategoria: "panaderia",
         marca: "Rancho Villa Verde",
+     ///presentacion inicial///
+        presentacion: "100 gr",
         presentaciones: [
         {
             presentacion: "100 gr palitos",
@@ -1045,7 +1049,7 @@ const productos = [
         categoria: "gourmet",
         subcategoria: "panaderia",
         marca: "Rancho Villa Verde",
-        presentacion: "1 kg",
+        presentacion: "1 pieza",
         precio: 160,
         imagen: "img/panhogaza.webp",
         ingredientes: "Harina de trigo, agua, masa madre y sal",
@@ -1065,7 +1069,7 @@ const productos = [
         categoria: "gourmet",
         subcategoria: "panaderia",
         marca: "Rancho Villa Verde",
-        presentacion: "1 kg",
+        presentacion: "100 gr",
         precio: 45,
         imagen: "img/taralli.webp",
         ingredientes: "Harina de rigo, aceite de oliva extra virgen, vino blanco y sal.",
