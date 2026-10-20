@@ -1244,7 +1244,8 @@ button {
     }
 
 
-    .menu-contenido nav a {
+    .menu-contenido nav > a,
+    .menu-contenido nav .submenu-boton {
         font-size: 25px;
     }
 
