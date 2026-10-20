@@ -746,7 +746,7 @@ const productos = [
         subcategoria: "untables",
         marca: "Pócima Vital",
         presentacion: "235 ml",
-        precio: null,
+        precio: 120,
         imagen: "img/ghee.webp",
         ingredientes: "100% mantequilla clarificada.",
         observaciones: "Conservar en un lugar fresco, seco y oscuro. Para alargar su vida se recomienda refrigerar.",
