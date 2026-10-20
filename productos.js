@@ -705,6 +705,36 @@ const productos = [
         descripcion: "-",
         sabores: null 
     },
+    {
+        id: "salsas",
+        nombre: "Salsa Macha tradicional",
+        categoria: "gourmet",
+        subcategoria: "salsas",
+        marca: "Villa verde",
+        presentacion: "250 gr",
+        precio: 130,
+        imagen: "img/salsa-macha-original.webp",
+        ingredientes: "Chile yahualica, chile de ancho, chile morita, cacahuate, arándano, nuez, semilla de calabaza, ajonjolí, semillas de girasol, ajo, aceite vegetal y sal",
+        observaciones: "Refrigerar una vez abierto.",
+        modoUso: "No especificado.",
+        descripcion: "-",
+        sabores: null 
+    },
+     {
+        id: "salsas",
+        nombre: "Salsa Macha con miel",
+        categoria: "gourmet",
+        subcategoria: "salsas",
+        marca: "Villa verde",
+        presentacion: "230 gr",
+        precio: 145,
+        imagen: "img/salsa-macha-miel.webp",
+        ingredientes: "Chile yahualica, chile de ancho, chile morita, cacahuate, arándano, nuez, semilla de calabaza, ajonjolí, semillas de girasol, ajo, aceite vegetal y sal",
+        observaciones: "Refrigerar una vez abierto.",
+        modoUso: "No especificado.",
+        descripcion: "-",
+        sabores: null 
+    },
     /* ==================================================
        GOURMET - UNTABLES
     ================================================== */
