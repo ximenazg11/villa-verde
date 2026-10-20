@@ -14,6 +14,30 @@
 
     <link rel="stylesheet" href="styles.css">
 
+    <style>
+        body.carrito-page {
+            padding-bottom: calc(80px + env(safe-area-inset-bottom, 0px));
+        }
+        .aviso-envios-carrito {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            box-sizing: border-box;
+            min-height: 64px;
+            margin: 0;
+            padding: 14px 20px calc(14px + env(safe-area-inset-bottom, 0px));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f7f7ed;
+            border-top: 1px solid #e5e5cd;
+            color: #515322;
+            font: 600 15px/1.5 Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+    </style>
 </head>
 
 
@@ -488,6 +512,8 @@
     </nav>
   </div>
 </footer>
+
+<p class="aviso-envios-carrito">Envíos en Ciudad de México y Zona metropolitana</p>
 
     <script src="app.js"></script>
 
