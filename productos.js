@@ -1538,7 +1538,7 @@ const productos = [
     marca: "Rancho Villa Verde",
     presentacion: "120 gr",
     precio: 75,
-    imagen: "img/platano-horneado-120g.webp",
+    imagen: "img/platanitos.webp",
     ingredientes: "Plátano y aceite vegetal.",
     observaciones: "Natural.",
     modoUso: "Listo para consumir.",
