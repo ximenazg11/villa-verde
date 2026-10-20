@@ -807,27 +807,71 @@ const productos = [
         sabores: null
     },
     {
+        id: "butter_pista",
+        nombre: "Crema de pistache",
+        categoria: "gourmet",
+        subcategoria: "untables",
+        marca: "Cacau & mani",
+        presentacion: "230 gr",
+        precio: 250,
+        imagen: "img/pisctahe.webp",
+        ingredientes: "Pistache, almendra, eritritol, fruta del monje, aceite de girasol.",
+        observaciones: "Sabor intenso, textura suave y una opción real y consciente para quienes cuidan lo que comen.",
+        modoUso: "No especificado.",
+        descripcion: " Sin azúcar, sin aceites añadidos, sin ingredientes artificiales, sin aceite de palma",
+        sabores: null
+    },
+    {
+        id: "butter_almendra",
+        nombre: "Crema de almendras",
+        categoria: "gourmet",
+        subcategoria: "untables",
+        marca: "Cacau & mani",
+        presentacion: "230 gr",
+        precio: 195,
+        imagen: "img/almendras.webp",
+        ingredientes: "almendra tostada.",
+        observaciones: "-",
+        modoUso: "Una crema suave, rica en sabor y naturalmente nutritiva. Elaborada solo con almendras cuidadosamente seleccionadas, es perfecta para quienes buscan una opción saludable y sin aditivos. Úsala en bowls, pan tostado, licuados o directamente del frasco.",
+        descripcion: "Sin azúcar, sin aceites añadidos, sin ingredientes artificiales, sin aceite de palma",
+        sabores: null
+    },
+     {
+        id: "butter_cachuate",
+        nombre: "Crema de cacahuates",
+        categoria: "gourmet",
+        subcategoria: "untables",
+        marca: "Cacau & mani",
+        presentacion: "230 gr",
+        precio: 95,
+        imagen: "img/cacahuate.webp",
+        ingredientes: "cacahuate tostado.",
+        observaciones: "-",
+        modoUso: "Nuestra crema de cacahuate es lo que debería ser siempre: pura, sencilla y deliciosa. Ideal para quienes buscan una opción nutritiva, natural y llena de sabor. Perfecta para snacks, smoothies, bowls o simplemente a cucharadas.",
+        descripcion: "Sin sal. Sin azúcares. Sin aceites añadidos.",
+        sabores: null
+    },
+    {
         id: "butter",
         nombre: "Spread",
         categoria: "gourmet",
         subcategoria: "untables",
         marca: "Cacau & mani",
         presentacion: "230 gr",
-        precio: null,
+        precio: 225,
         imagen: "img/butter.webp",
         ingredientes: "Hecha con avellanas y almendras tostadas, cacao puro y monk fruit. Sin azúcar, sin aceites añadidos, sin ingredientes artificiales. ",
         observaciones: "Sabor intenso, textura suave y una opción real y consciente para quienes cuidan lo que comen.",
         modoUso: "No especificado.",
         descripcion: "No especificada.",
         sabores: [
-            "Crema de pistache",
             "Crema de avellanas con cacao",
             "Crema de almendra con matcha",
             "Crema de almendra con canela y galleta caramelizada",
             "Crema de almendra con mora azul",
-            "Crema de almendras"
         ]
     },
+
     {
     id: "cajeta-sin-azucar",
     nombre: "Cajeta sin azúcar 300gr",
@@ -1154,7 +1198,7 @@ const productos = [
     {
         id: "Mermelada guayaba",
         nombre: "Guayaba + canela - De temporada",
-        categoria: "gourmet",
+       categoria: "nuevos",
         subcategoria: "mermelada",
         marca: "Chula maría",
         presentacion: "275 gr",
@@ -2484,16 +2528,16 @@ subcategoria: "conservas-encurtidos",
 },
 {
 id: "chiles",
-    nombre: "Chile güero cascabela",
-  categoria: "gourmet",
+    nombre: "Chile güero cascabella",
+  categoria: "gourmet", 
 subcategoria: "conservas-encurtidos",
     marca: "Villa verde gourmet",
-    presentacion: "-",
+    presentacion: "240 gr",
     precio: 60,
      imagen: "img/chiles.webp",
     ingredientes: "Chile güero cascabela",
     observaciones: "-",
-    descripcion: "Hecho en méxico"
+    descripcion: "Producto originario de Obregón Sonora"
 },
 ]; 
 
