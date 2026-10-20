@@ -859,7 +859,7 @@ const productos = [
         marca: "Cacau & mani",
         presentacion: "230 gr",
         precio: 225,
-        imagen: "img/butter.webp",
+        imagen: "img/buttter.webp",
         ingredientes: "Hecha con avellanas y almendras tostadas, cacao puro y monk fruit. Sin azúcar, sin aceites añadidos, sin ingredientes artificiales. ",
         observaciones: "Sabor intenso, textura suave y una opción real y consciente para quienes cuidan lo que comen.",
         modoUso: "No especificado.",
