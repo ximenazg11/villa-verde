@@ -17,7 +17,7 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: #111;
-    background: #ffffff;
+    background: #fbf9f5;
 }
 
 
@@ -49,7 +49,7 @@ button {
 
     padding: 0 38px;
 
-    background: white;
+    background: #fbf9f5;
 
     position: relative;
 
@@ -190,7 +190,7 @@ button {
 
     height: 100vh;
 
-    background: #ffffff;
+    background: #fbf9f5;
 
     z-index: 1000;
 
@@ -476,7 +476,7 @@ button {
 ======================================== */
 
 .catalogo-page {
-    background: #f6f6f3;
+    background: #fbf9f5;
 
     min-height: 100vh;
 }
@@ -533,7 +533,7 @@ button {
 
 
 .producto-card {
-    background: white;
+    background: #fbf9f5;
 
     display: block;
 
@@ -622,7 +622,7 @@ button {
 ======================================== */
 
 .producto-page {
-    background: #f5f4ef;
+    background: #fbf9f5;
 
     min-height: 100vh;
 }
@@ -818,7 +818,7 @@ button {
 
     border: none;
 
-    background: white;
+    background: #fbf9f5;
 
     cursor: pointer;
 
@@ -839,7 +839,7 @@ button {
 
     border-right: 1px solid #ddd;
 
-    background: white;
+    background: #fbf9f5;
 
     font-size: 14px;
 
@@ -913,7 +913,7 @@ button {
 ======================================== */
 
 .carrito-page {
-    background: #f6f6f3;
+    background: #fbf9f5;
 
     min-height: 100vh;
 }
@@ -1029,7 +1029,7 @@ button {
 /* RESUMEN */
 
 .resumen-carrito {
-    background: #fff;
+    background: #fbf9f5;
 
     padding: 35px;
 
@@ -1110,7 +1110,7 @@ button {
 
     text-align: center;
 
-    background: white;
+    background: #fbf9f5;
 }
 
 
@@ -1451,7 +1451,7 @@ button {
 ======================================== */
 
 .sobre-nosotros {
-    background: #f6f6f3;
+    background: #fbf9f5;
 
     padding: 120px 30px;
 
@@ -1733,7 +1733,7 @@ button {
     padding: 14px 48px 14px 18px;
     border: 1px solid #b8b99a;
     border-radius: 4px;
-    background-color: #f5f4ef;
+    background-color: #fbf9f5;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23656935' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: right 18px center;
@@ -1756,7 +1756,7 @@ button {
 }
 
 .producto-page #selectorPresentacion option {
-    background-color: #f5f4ef;
+    background-color: #fbf9f5;
     color: #111;
 }
 
