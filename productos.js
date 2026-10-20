@@ -1058,9 +1058,8 @@ const productos = [
         descripcion: "Sin conservadores",
             sabores: [
             "Natural",
-            "Arandano con girasol",
+            "Arándano con nuez",
             "Romero",
-            "Nuez con pasas"
         ]
     },
      {
@@ -2125,7 +2124,7 @@ id: "pretzel-100g",
 
 {
     id: "nuez-chocolate-250g",
-    nombre: "Nuez con chocolate y leche",
+    nombre: "Nuez con chocolate",
     categoria: "snacks",
     subcategoria: "dulces",
     marca: "No especificada",
