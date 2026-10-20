@@ -101,10 +101,10 @@ const productos = [
         presentacion: "Presentación no especificada",
         precio: 95,
         imagen: "img/kefir.webp",
-        descripcion: "Bebida fermentada elaborada a base de coco y cultivos vivos.",
+        descripcion: "Apto para personas con intolerancia a la lactosa.Sin productos de origen animal. Producto vivo, si tiene burbujas y separa es normal",
         ingredientes: "Bebida vegetal de coco, cultivos vivos y goma xantana.",
-        observaciones: "Conservar en refrigeración.",
-        modoUso: "Consumir frío.",
+        observaciones: "Sin azúcarea añadidos, sin conservadores, ingredientes naturales, fuente natural de probióticos y prebióticos.",
+        modoUso: "Mantener en refrigeración, agitar antes de servir,Gluten Free. Prodcuto Vegano.",
         sabores: null
     },
 
@@ -117,10 +117,10 @@ const productos = [
         presentacion: "60 ml",
         precio: 70,
         imagen: "img/shotinmune.webp",
-        descripcion: "Shot concentrado elaborado con kombucha, limón, jengibre y cúrcuma.",
-        ingredientes: "Vinagre de kombucha, jugo de limón, jugo de jengibre, jugo de cúrcuma y 0.01% de sorbato de sodio.",
-        observaciones: "Conservar en refrigeración.",
-        modoUso: "Consumir frío.",
+        descripcion: "Este shot esta diseñado para fortalecer tu sistema inmunológico y ayudarte a mantenerte saludable dia con día.",
+        ingredientes: "Vinagre de kombucha, jugo de limón, jugo de jengibre, jugo de cúrcuma y 0,01% de sorbato de sodio como conservador.",
+        observaciones: "Producto vegano. gluten Free. Mantener en refrigeración ",
+        modoUso: "Ideal para refuerzos inmunologicos, cambios de clima y protección natural diaria. ",
         sabores: null
     },
 
