@@ -1151,6 +1151,21 @@ const productos = [
         descripcion: "Ideales para acompañar tablas de quesos, carnes frías, panes y postres.",
         sabores: null
     },
+    {
+        id: "Mermelada guayaba",
+        nombre: "Guayaba + canela - De temporada",
+        categoria: "gourmet",
+        subcategoria: "mermelada",
+        marca: "Chula maría",
+        presentacion: "275 gr",
+        precio: 195,
+        imagen: "img/guyabacane.webp",
+        ingredientes: "Guayaba rosa, canela en trozo, azúcar, jugo de limón y pectina citrica",
+        observaciones: "Refrigerar una vez abierto.",
+        modoUso: "No especificado.",
+        descripcion: "Ideales para acompañar tablas de quesos, carnes frías, panes y postres.",
+        sabores: null
+    },
 
 /* ==================================================
    CHARCUTERÍA - QUESOS
