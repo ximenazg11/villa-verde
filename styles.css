@@ -1705,3 +1705,65 @@ button {
     grid-column: 5;
   }
 }
+
+/* Selector de presentación: Villa Verde */
+.producto-page .presentaciones-selector {
+    width: 100%;
+    max-width: 320px;
+    margin: 22px 0 24px;
+}
+
+.producto-page .presentaciones-selector label {
+    display: block;
+    margin-bottom: 10px;
+    color: #55563a;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
+
+.producto-page #selectorPresentacion {
+    -webkit-appearance: none;
+    appearance: none;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    min-height: 52px;
+    padding: 14px 48px 14px 18px;
+    border: 1px solid #b8b99a;
+    border-radius: 4px;
+    background-color: #f5f4ef;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23656935' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 18px center;
+    color: #111;
+    font: inherit;
+    font-size: 16px;
+    line-height: 1.4;
+    cursor: pointer;
+}
+
+.producto-page #selectorPresentacion:hover {
+    border-color: #8f9141;
+    background-color: #eeeee3;
+}
+
+.producto-page #selectorPresentacion:focus-visible {
+    border-color: #656935;
+    outline: 2px solid #656935;
+    outline-offset: 3px;
+}
+
+.producto-page #selectorPresentacion option {
+    background-color: #f5f4ef;
+    color: #111;
+}
+
+@media (forced-colors: active) {
+    .producto-page #selectorPresentacion {
+        -webkit-appearance: auto;
+        appearance: auto;
+        background-image: none;
+    }
+}
