@@ -1435,10 +1435,43 @@ const productos = [
     precio: 110,
     imagen: "img/oaxaca.1.webp",
     ingredientes: "Leche entera pasteurizada de cabra, sal yodada, cloruro de calcio, cultivos lácticos y cuajo.",
-    observaciones: "Mantener en refrigeración. Precio por confirmar.",
+    observaciones: "Mantener en refrigeración.",
     modoUso: "No especificado.",
     descripcion: "No especificada.",
     sabores: null
+},
+{
+    id: "jocoque-natural",
+    nombre: "Jocoque natural",
+    categoria: "charcuteria",
+    subcategoria: "quesos",
+    marca: "Xoqui",
+    presentacion: "250 gr",
+    precio: 95,
+    imagen: "img/jocona.webp",
+   ingredientes: "leche entera pasteurizada de vaca, sal y cultivos lácticos.",
+observaciones: "Presentación de 250 g. Consultar en el envase las indicaciones de conservación y la fecha de caducidad.",
+modoUso: "Ideal para untar en pan o tostadas, acompañar verduras y preparar aderezos o dips.",
+descripcion: "Jocoque natural XOQUI de textura cremosa y sabor suave con un toque ácido. Una opción versátil para acompañar tus comidas y preparar recetas dulces o saladas.",
+    sabores: null
+},
+{
+    id: "jocoque-sabor",
+    nombre: "Jocoque",
+    categoria: "charcuteria",
+    subcategoria: "quesos",
+    marca: "Xoqui",
+    presentacion: "240 gr",
+    precio: 115,
+    imagen: "img/jocosa.webp",
+    ingredientes: "leche entera pasteurizada de vaca, sal y cultivos lácticos. Puede llevar chile serrano o pepino",
+    observaciones: "Mantener en refrigeración.",
+    modoUso: "Ideal como dip para verduras, para untar en pan pita o acompañar ensaladas y carnes asadas.",
+    descripcion: "No especificada.",
+   sabores: [
+        "Chile serrano",
+        "Jocoque + pepino"
+    ]
 },
 
 
