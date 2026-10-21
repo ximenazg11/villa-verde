@@ -1473,7 +1473,36 @@ descripcion: "Jocoque natural XOQUI de textura cremosa y sabor suave con un toqu
         "Jocoque + pepino"
     ]
 },
-
+{
+    id: "Queso-botanero",
+    nombre: "Queso botanero",
+    categoria: "charcuteria",
+    subcategoria: "quesos",
+    marca: "Neole",
+    presentacion: "450 gr",
+    precio: null,
+    imagen: "img/botanero.webp",
+   ingredientes: "El queso Chihuahua es un queso fresco de origen Mexicano de pasta blanda prensada, obtenida por coagulación enzimática. Elaborado con leche entera de vaca Holstein, pasteurizada.",
+observaciones: "Mantener refrigerado.",
+modoUso: "-",
+descripcion: "Color amarillo marfil. Olor y sabor suave, ligeramente ácido con toques de arándano y nuez. Textura cremosa en el paladar. Ideal para botana y gratinar.",
+    sabores: null
+},
+{
+    id: "Queso-enchilado",
+    nombre: "Queso enchilado",
+    categoria: "charcuteria",
+    subcategoria: "quesos",
+    marca: "Neole",
+    presentacion: "450 gr",
+    precio: null,
+    imagen: "img/enchilado.webp",
+   ingredientes: "El queso Enchilado es un queso fresco y sin corteza de origen Mexicano de pasta blanda prensada, obtenida por coagulación enzimática.Elaborado con leche entera de vaca de raza Holstein, pasteurizada.",
+observaciones: "Mantener refrigerado.",
+modoUso: "-",
+descripcion: "Textura semidura y cremosa. Sabor lácteo y ligeramente ácido. Sutilmente picante por su adobo de chile guajillo. Ideal para botana y para fundir.",
+    sabores: null
+},
 
 
 /* ==================================================
